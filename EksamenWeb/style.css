@@ -18,7 +18,7 @@
 
         /* Bakgrunn top bar*/
         #top {
-            background-color: #cfab7b;
+            background-color: #4b6043;
             font-family: Arial;
             overflow: hidden;
         }
@@ -26,7 +26,7 @@
         /* Plaserer linkene riktig*/
         #top infoTop{
             float: left;
-            color: #57004f;
+            color: tan;
             text-align: center;
             padding: 14px 16px;
             font-size: 25px;    
@@ -34,7 +34,7 @@
 
         /* Endrer farge når du tar musen over*/
         #top infoTop:hover{
-            background-color: #57004f;
+            background-color: tan;
             color: white;
             cursor: pointer;
         }
