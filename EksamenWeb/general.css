@@ -1,0 +1,128 @@
+html{
+
+    /*scrolling effekt når man trykker på links til annet sted på siden*/
+    scroll-behavior: smooth;
+
+}
+
+body{
+    
+    /* Fjerner margen*/
+    margin: 0px;
+
+    /* Styler bakgrunnen med et bilde
+    Bildet er tatt fra www.wallpaperflare.com */
+    background-image: url(bakgrunn.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*gir links samme farge som resten av teksten*/
+a{
+    color: inherit;
+}
+
+/* Styler links*/
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+
+
+.box{
+    background-color: #3a4928;
+    font-family: Arial;
+    overflow: auto;
+    color: #e6deb9;
+}
+.box > h1{
+    font-style: oblique;
+    color: #e6deb9;
+}
+.box > h2{
+    font-style: italic;
+    color: #e6deb9;
+}
+
+.boxinv{
+    background-color: #e6deb9;
+    font-family: Arial;
+    overflow: auto;
+}
+
+.boxinv > h1{
+    font-style: oblique;
+    color: #3a4928;
+}
+
+.boxinv > h2{
+    font-style: italic;
+    color: #3a4928;
+}
+
+
+/* Plaserer linkene riktig*/
+#top infoTop{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;    
+}
+
+/* Endrer farge når du tar musen over*/
+#top infoTop:hover{
+    background-color: #e6deb9;
+    color: #3a4928;
+    cursor: pointer;
+}
+
+
+/* En klasse for å lage mellomrom (så man ikke trenger x-antall <br> etter hverandre)*/
+.space{
+    margin: 20px;
+}
+
+/* Styler footer*/
+#footer {
+    padding: 35px;
+    margin: 0px;
+    text-align: center;
+    background-color: #3a4928;
+}
+
+/* Sentrerer bildet i footeren*/
+#footer > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Styler infoblokkene i footeren*/
+
+.info{
+    display: inline-block;
+    width: 420px;
+    height: 320px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.info > h2{
+    margin: 5px;
+    padding: 3px;
+}
+.info > p{
+    margin: 5px;
+    padding: 3px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Styler en <hr>*/
+hr.bunn {
+    border:1px solid #e6deb9;
+    margin: 15px;
+}
