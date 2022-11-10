@@ -7,7 +7,7 @@
     <title>Booking - Ekebergrestauranten</title>
 
     <link rel="general stylesheet" href="general.css">
-    <link rel="booking sylesheet" href="booking.css">
+    <link rel="booking stylesheet" href="booking.css">
 </head>
 <body>
     <!-- Lager id for headeren-->
@@ -44,20 +44,42 @@
 
     <h1>Dette er booking</h1>
 
-    <form>
-        <div class="formElem">
-            <label for="name">Ditt navn</label><br>
-            <input type="text" id="name" name="name" required><br>
-        </div>
-        <div class="formElem">
-            <label for="name">Din epost</label><br>
-            <input type="text" id="name" name="name" required><br>
-        </div>
-        <div class="formElem">
-            <label for="name">Din telefon</label><br>
-            <input type="number" id="name" name="name" required><br>
-        </div>
+    
+        <form class="boxinv">
+            
+            <div class="FormElem inline">
+                <label for="name">Ditt navn</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-    </form>
+            <div class="FormElem inline">
+                <label for="epost">Din epost</label>
+                <input type="text" id="epost" name="epost" required>
+            </div>
+
+        
+            <div class="FormElem inline">
+                <label for="telefon">Din telefon</label>
+                <input type="number" id="telefon" name="telefon" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="gjester">Antall gjester</label>
+                <input type="number" id="gjester" name="gjester" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="dato">Dato for booking</label>
+                <input type="date" id="dato" name="dato">
+            </div>
+
+            <div class="FormElem">
+                <label for="melding">Noe mer?</label>
+                <textarea id="melding" name="melding">
+            </div>
+
+        
+        </form>
+    
 </body>
 </html>
