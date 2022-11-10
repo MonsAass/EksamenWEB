@@ -1,0 +1,39 @@
+
+
+/* Styler menyen, lager den inni sin egen boks*/
+.meny, .allergener{
+    width: fit-content;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Styler h1, h2 og p i menyen*/
+
+.meny > p{
+    font-size:19px;
+}
+
+.meny > hr{
+    border: 1px solid #3a4928;
+    
+}
+
+/* Setter symbolene for allergier fint ved siden av hverandre*/
+.column {
+    float: none;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+}      
+
+/* Allergikart */
+.allergener{ 
+    font-size: 17px;
+}
+
+
+       

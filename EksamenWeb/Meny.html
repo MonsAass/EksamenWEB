@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekebergresturanten Meny: Endelig</title> 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="general stylesheet" href="general.css">
+    <link rel="meny stylesheet" href="meny.css">
 </head>
 <body>
 
     <!-- Lager id for headeren-->
-    <header id = "top">
+    <header id = "top" class = "box">
 
-    <!-- Logoen til ekeberg -->
-        <a href="https://www.ekebergrestauranten.com/"  target="_blank">
-            <img src="ekebergrestauranten-logo.jpg" alt="Logo til resturant" width="55px" height="55px" style="float: left">
+    <!-- Logoen til kongla -->
+    <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
+        <a href="velkommen.html"  target="_blank">
+            <img src="kongla.png" alt="Logo til resturant" width="55px" height="55px" style="float: left">
         </a>
         <!-- Liste for ulik info -->
         <a href="#tider">
@@ -35,7 +37,7 @@
 <!-- Starten på menyen -->
 
     <div class="space"></div>
-    <div id="meny_start" class="Menu">
+    <div id="meny_start" class="meny boxinv">
         <h1>KJØKKENSJEFENS ANBEFALING</h1>
 
         <h2>Dette er satte menyer som presenteres ved bordet.</h2>
@@ -143,8 +145,8 @@
     <div class="space"></div>
 
     <!-- Allergikart -->
-    <div class="alergener">
-        <h3>Allergener</h3>
+    <div class="allergener boxinv">
+        <h2>Allergener</h2>
         <img src="fisk.png" alt="Symbol for fisk" width="20" height="20">
         <img src="egg.png" alt="Symbol for egg" width="20" height="20">
         <img src="melk.png" alt="Symbol for melk" width="20" height="20">
@@ -162,8 +164,8 @@
     <!-- Footer -->
     <footer id="footer">
 
-        <div id="tider" class="info">
-            <h3 class="heading">ÅPNINGSTIDER</h3>
+        <div id="tider" class="info boxinv">
+            <h2>ÅPNINGSTIDER</h2>
             <p>
                 <strong>Mandag:</strong>
                 <br>
@@ -184,8 +186,8 @@
             </p>
         </div>
 
-        <div class="info">
-            <h3 class="heading">ADRESSE</h3>
+        <div class="info boxinv">
+            <h2>ADRESSE</h2>
             <p>
                 <a href= "https://www.google.com/maps/place/Ekebergrestauranten/@59.8994863,10.7618616,17z/data=!3m1!4b1!4m5!3m4!1s0x46416ef275110fdd:0x109741c667c86263!8m2!3d59.8994925!4d10.7618649" target="_blank">
                 Kongsveien 15, 0193 Oslo</a>
@@ -194,8 +196,8 @@
             <iframe id="map", src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8003.8707693666065!2d10.753106848582151!3d59.89948600979038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416ef275110fdd%3A0x109741c667c86263!2sEkebergrestauranten!5e0!3m2!1sno!2sno!4v1663580401270!5m2!1sno!2sno" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="info">
-            <h3 id="kontakt" class="heading">KONTAKT OSS</h3>
+        <div class="info boxinv">
+            <h2 id="kontakt">KONTAKT OSS</h2>
             <p>
                 <strong>Telefon:</strong>
                 <br>
@@ -209,13 +211,13 @@
             </p>
         </div>
 
-        <img src="ekebergrestauranten-logo.jpg" alt="Logo til resturant" width="190px" height="190px">
+        <img src="kongla.png" alt="Logo til resturant" width="190px" height="190px">
 
         <hr class="bunn">
         <br>
 
         <!-- Link opp til toppen av siden -->
-        <a class= "heading" href="#top">Gå tilbake til toppen</a>
+        <a style ="color: #e6deb9; font-size: 25px;" href="#top">Gå tilbake til toppen</a>
 
     </footer>
 </body>
