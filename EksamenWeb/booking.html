@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Ekebergrestauranten</title>
+
+    <link rel="general stylesheet" href="general.css">
+    <link rel="booking stylesheet" href="booking.css">
+</head>
+<body>
+    <!-- Lager id for headeren-->
+    <header id = "top" class = "box">
+
+        <!-- Logoen til kongla -->
+        <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
+            <a href="velkommen.html"  target="_blank">
+                <img src="kongla.png" alt="Logo til resturant" width="55px" height="55px" style="float: left">
+            </a>
+            <!-- Liste for ulik info -->
+            <a href="#tider">
+            <infoTop>Åpningstider</infoTop>
+            </a>
+    
+            <a href="#meny_start" target ="_self">
+            <infoTop>Meny</infoTop>
+            </a>
+    
+            <a href="#kontakt">
+            <infoTop>Kontakt oss</infoTop>
+            </a>
+            
+            <a href="booking.html" target="_self">
+                <infoTop>Booking</infoTop>
+            </a>
+
+            <a href ="topical.html" target="_self">
+                <infoTop>Topical</infoTop>
+            </a>
+    
+        </header>
+
+
+    <h1>Dette er booking</h1>
+
+    
+        <form class="boxinv">
+            
+            <div class="FormElem inline">
+                <label for="name">Ditt navn</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="epost">Din epost</label>
+                <input type="text" id="epost" name="epost" required>
+            </div>
+
+        
+            <div class="FormElem inline">
+                <label for="telefon">Din telefon</label>
+                <input type="number" id="telefon" name="telefon" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="gjester">Antall gjester</label>
+                <input type="number" id="gjester" name="gjester" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="dato">Dato for booking</label>
+                <input type="date" id="dato" name="dato">
+            </div>
+
+            <div class="FormElem">
+                <label for="melding">Noe mer?</label>
+                <textarea id="melding" name="melding">
+            </div>
+
+        
+        </form>
+    
+</body>
+</html>

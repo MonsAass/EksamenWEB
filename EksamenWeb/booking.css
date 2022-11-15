@@ -1,0 +1,26 @@
+form{
+    width: 33%;
+    margin-left: 33%;
+    padding: 10px;
+}
+.FormElem{
+    margin: 20px;
+}
+
+.FormElem.inline{
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+label{
+    display: block;
+    padding-bottom: 10px;
+}
+input, textarea{
+    padding: 10px;
+    width: 100%;
+}
+textarea{
+    height: 250px;
+    width: 95%;
+}
