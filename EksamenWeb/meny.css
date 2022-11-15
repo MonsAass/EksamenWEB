@@ -2,11 +2,9 @@
 
 /* Styler menyen, lager den inni sin egen boks*/
 .meny, .allergener{
-    width: fit-content;
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    margin: auto;
-    padding: 10px;
+    text-align: center;
+    width: fit-content;
 }
 
 /* Styler h1, h2 og p i menyen*/

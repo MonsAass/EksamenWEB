@@ -35,6 +35,9 @@ a:active { text-decoration: underline; }
     font-family: Arial;
     overflow: auto;
     color: #e6deb9;
+    width: 65%;
+    margin: auto;
+    padding: 10px;
 }
 .box > h1{
     font-style: oblique;
@@ -49,6 +52,9 @@ a:active { text-decoration: underline; }
     background-color: #e6deb9;
     font-family: Arial;
     overflow: auto;
+    width: 65%;
+    margin: auto;
+    padding: 10px;
 }
 
 .boxinv > h1{
@@ -61,6 +67,14 @@ a:active { text-decoration: underline; }
     color: #3a4928;
 }
 
+#top{
+    margin: 0px;
+    text-align: center;
+    background-color: #3a4928;
+    overflow: auto;
+    color: #e6deb9;
+    font-family: Arial;
+}
 
 /* Plaserer linkene riktig*/
 #top infoTop{
@@ -126,3 +140,22 @@ hr.bunn {
     border:1px solid #e6deb9;
     margin: 15px;
 }
+
+a.tilTopp{
+    color: #e6deb9; 
+    font-size: 60px;
+    position: fixed;
+    bottom: 15px;
+    right: 25px; 
+    font-weight: 500;
+    height: 80px;
+    width: 70px;
+    text-align: center;
+}
+
+a.tilTopp:hover { 
+    text-decoration: none;
+    font-weight: 1000;
+    right: 24px;
+}
+
