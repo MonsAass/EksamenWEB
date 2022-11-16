@@ -1,15 +1,17 @@
 
-/*ignorer alt det her*/
+/*ignorer alt det her
 
 .velkommen{
 
-text-align: center;
+text-align: left;
 width: 30%;
-}
-
-.tekst{
-    align-items: flex-start;
-    width: 40%;
+padding-right: 5%;
+float: left;
 }
 
 
+.trehus{
+    width: 65%;
+    float: left;
+}
+*/
