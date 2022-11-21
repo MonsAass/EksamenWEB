@@ -7,15 +7,20 @@
     width: fit-content;
 }
 
-/* Styler h1, h2 og p i menyen*/
+/* Styler hr og allergisymbolene i menyen*/
 
-.meny > p{
-    font-size:19px;
+.column > img {
+    width: 20px;
+    height: auto;
 }
 
 .meny > hr{
     border: 1px solid #3a4928;
     
+}
+
+.meny > h1{
+   margin-top: 10px; 
 }
 
 /* Setter symbolene for allergier fint ved siden av hverandre*/
@@ -28,10 +33,34 @@
     display: inline-block;
 }      
 
+
+
+
+/*dette er ass*/
+
 /* Allergikart */
-.allergener{ 
+.allergener > h2{
+    margin-top: 0;
+}
+
+.allergikart{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.allergikart > div{ 
+    width: 50px;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-align: center;
     font-size: 17px;
 }
 
-
-       
+.allergikart > div > img{
+    width: 30px;
+    height: auto;
+}
