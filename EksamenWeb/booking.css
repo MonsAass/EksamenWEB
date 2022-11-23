@@ -35,4 +35,5 @@ input[type=submit]{
     padding: 10px;
     width: 100%;
     font-size: 15px;
+    cursor: pointer;
 }
