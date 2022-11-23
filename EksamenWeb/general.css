@@ -159,9 +159,6 @@ a:active { text-decoration: underline; }
     display: inline-block;
     vertical-align: middle;
 }
-.info> h6{
-    font-family: 'Evergreen';
-}
 
 /* Styler en <hr>*/
 hr.bunn {
