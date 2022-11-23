@@ -42,125 +42,136 @@
 
     <div class="space"></div>
 
-        <!--kode fra: https://codepen.io/tutsplus/pen/wNaGjy-->
         
 
-     <div id="reservering av bord" class="boxinv">
-        <H1>Reservering av bord</H1>
-        <p>Fyll ut feltene under og trykk på reserver for å reservere et bord</p>   
-    <form>
+    <div id="reservering" class="boxinv grid">
+        <form style="float: left;" class="grid_1">
+            <H1>Reservering av bord</H1>
+            <p>Fyll ut feltene under og trykk på reserver for å reservere et bord</p>   
+                
+            <div class="FormElem inline">
+                <label for="name">Ditt navn</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="epost">Din epost</label>
+                <input type="text" id="epost" name="epost">
+            </div>
+
+        
+            <div class="FormElem inline">
+                <label for="telefon">Din telefon</label>
+                <input type="number" id="telefon" name="telefon" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="gjester">Antall gjester</label>
+                <input type="number" id="gjester" name="gjester" required>
+            </div>
+
+            <div class="FormElem inline">
+                <label for="dato">Dato for booking</label>
+                <input type="date" id="dato" name="dato" required>
+            </div> 
+            <div class="FormElem inline">
+                <input type="submit" value="Reserver">
+            </div>           
             
-        <div class="FormElem inline">
-            <label for="name">Ditt navn</label>
-            <input type="text" id="name" name="name" required>
+        </form>
+        <div class="grid_2">
+            <!--Bilet er tatt fra: https://netimesmagazine.co.uk/magazine/editorial/business-lunch-the-treehouse-restaurant-at-the-alnwick-garden/-->
+            <img src="innsidetrehus.jpg" alt="Innsiden av testuranten">
         </div>
-
-        <div class="FormElem inline">
-            <label for="epost">Din epost</label>
-            <input type="text" id="epost" name="epost" required>
-        </div>
-
-        
-        <div class="FormElem inline">
-            <label for="telefon">Din telefon</label>
-            <input type="number" id="telefon" name="telefon" required>
-        </div>
-
-        <div class="FormElem inline">
-            <label for="gjester">Antall gjester</label>
-            <input type="number" id="gjester" name="gjester" required>
-        </div>
-
-        <div class="FormElem inline">
-            <label for="dato">Dato for booking</label>
-            <input type="date" id="dato" name="dato">
-        </div>            
-        
-    </form>
     </div>
+    
     <div class="space"></div>
 
-    <div id="heleLokalet" class="boxinv">
-        <h2>Booking av hele lokalet</h2>
-        <p>Om du ønsker et fantastisk bryllup eller et vidunderlig 50-årsalg så har vi lokale, maten og hjelpen som skal til for å arrangere det.
-            Booking av lokalet må skje minst én måned før eventen. Ta kontakt med oss på booking@kongla.no og skriv kort om eventen og dato for bookingen. 
-            Så tar vi kontakt med dere for hjelpe til med å skape den perfekte dagen.</p>    
-    </div>
-
-    <div class="space"></div>
-
-    <!-- Footer -->
-    <footer id="footer">
-
-        <div id="tider" class="info boxinv">
-            <h2>ÅPNINGSTIDER RESTURANT</h2>
-            <p>
-                <strong>Mandag:</strong>
-                <br>
-                Stengt
-                <br>
-                -<br> 
-                <strong>Tirsdag-lørdag:</strong>
-                <br>
-                Kl. 12.00-24.00<br>
-                (Siste ankomst 21.00).
-                <br>
-                -<br>
-                <strong>Søndag:</strong>
-                <br>
-                Kl. 12.00-23.00
-                <br>
-                (Siste ankomst 20.00).
-            </p>
+    <div id="heleLokalet" class="boxinv grid">
+        <div class="grid_2">
+            <h2>Booking av hele lokalet</h2>
+            <p>Om du ønsker et fantastisk bryllup eller et vidunderlig 50-årsalg så har vi lokale, maten og hjelpen som skal til for å arrangere det.
+                Booking av lokalet må skje minst én måned før eventen. Ta kontakt med oss på <a href= "mailto:kongla_booking@mailmailsen.no" target="_blank">kongla_booking@mailmailsen.no</a> og skriv kort om eventen og dato for bookingen. 
+                Så tar vi kontakt med dere for hjelpe til med å skape den perfekte dagen.</p>   
         </div>
-
-        <div class="info boxinv">
-            <h2>ADRESSE</h2>
-            <p>
-                <a href= "https://www.google.com/maps/place/Ekebergrestauranten/@59.8994863,10.7618616,17z/data=!3m1!4b1!4m5!3m4!1s0x46416ef275110fdd:0x109741c667c86263!8m2!3d59.8994925!4d10.7618649" target="_blank">
-                Kongleveien 88, 0891 Oslo</a>
-                <hr>
-            </p>
-            <iframe id="map", src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.3166192138461!2d10.729330976104743!3d60.03773233503087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNjDCsDAyJzE1LjgiTiAxMMKwNDMnNDkuNSJF!5e0!3m2!1sno!2sno!4v1668625877210!5m2!1sno!2sno" width="90%" height="65%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""></iframe>
+        <div class="grid_1">
+            <!--Bildet er tatt fra: https://meny.no/oppskrifter/Biff/Indrefilet/indrefilet-av-okse-med-potetmos-og-ovnsbakte-tomater/-->
+            <img src="indrefilet.jpg" alt="Bilde av en indrefilet">
+            <bildetekst>Bildet er hentet fra: <a href="https://meny.no/oppskrifter/Biff/Indrefilet/indrefilet-av-okse-med-potetmos-og-ovnsbakte-tomate">Meny</a></bildetekst>
         </div>
-
-        <div class="info boxinv">
-            <h2 id="kontakt">KONTAKT OSS</h2>
-            <p>
-                <strong>Telefon:</strong>
-                <br>
-                <a href=tel: +47 98 45 19 44 target="_blank">
-                +47 23 24 23 00</a>
-                <br>
-                -<br>
-                <strong>Mail:</strong> 
-                <br>
-                <a href= "mailto:kongla_booking@mailmailsen.no" target="_blank">kongla_booking@mailmailsen.no</a>
-            </p>
-        </div>
-
         <div class="space"></div>
+    </div>
 
-    
 
-        <hr class="bunn">
-        <br>
-    
-        <a href="index.html">
-            <img src="kongla.png" alt="Logo til resturant" width="190px" height="190px">
-        </a>
-    
-        <!-- Link opp til toppen av siden -->
-        <a class="tilTopp" href="#top">
-            ^
-        </a>
+    <div class="space"></div>
 
-    </footer>
-    
-<!-- Link opp til toppen av siden -->
-<a class="tilTopp" href="#top">
-    ^
-</a>
+   <!-- Footer -->
+   <footer id="footer">
+
+    <div id="tider" class="info boxinv">
+        <h2>ÅPNINGSTIDER RESTURANT</h2>
+        <p>
+            <strong>Mandag:</strong>
+            <br>
+            Stengt
+            <br>
+            -<br> 
+            <strong>Tirsdag-lørdag:</strong>
+            <br>
+            Kl. 12.00-24.00<br>
+            (Siste ankomst 21.00).
+            <br>
+            -<br>
+            <strong>Søndag:</strong>
+            <br>
+            Kl. 12.00-23.00
+            <br>
+            (Siste ankomst 20.00).
+        </p>
+    </div>
+
+    <div class="info boxinv">
+        <h2>ADRESSE</h2>
+        <p>
+            <a href= "https://www.google.com/maps/place/Ekebergrestauranten/@59.8994863,10.7618616,17z/data=!3m1!4b1!4m5!3m4!1s0x46416ef275110fdd:0x109741c667c86263!8m2!3d59.8994925!4d10.7618649" target="_blank">
+            Kongleveien 88, 0891 Oslo</a>
+            <hr>
+        </p>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.3166192138461!2d10.729330976104743!3d60.03773233503087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNjDCsDAyJzE1LjgiTiAxMMKwNDMnNDkuNSJF!5e0!3m2!1sno!2sno!4v1668625877210!5m2!1sno!2sno" width="90%" height="65%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+    </div>
+
+    <div class="info boxinv">
+        <h2 id="kontakt">KONTAKT OSS</h2>
+        <p>
+            <strong>Telefon:</strong>
+            <br>
+            <a href=tel: +47 98 45 19 44 target="_blank">
+            +47 98 45 19 44</a>
+            <br>
+            -<br>
+            <strong>Mail:</strong> 
+            <br>
+            <a href= "mailto:kongla_booking@mailmailsen.no" target="_blank">kongla_booking@mailmailsen.no</a>
+        </p>
+    </div>
+
+    <div class="space"></div>
+
+
+
+    <hr class="bunn">
+    <br>
+
+    <a href="index.html">
+        <img src="kongla.png" alt="Logo til resturant" width="190px" height="190px">
+    </a>
+
+    <!-- Link opp til toppen av siden -->
+    <a class="tilTopp" href="#top">
+        ^
+    </a>
+
+</footer>
 
 </body>
 </html>
