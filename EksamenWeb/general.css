@@ -31,6 +31,20 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
 
+/*Legger inn fonts*/
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url(TrajanPro-Regular.ttf);
+}
+@font-face {
+    font-family: TrajanPro-Bold;
+    src: url(TrajanPro-Bold.otf);
+}
+@font-face {
+    font-family: Evergreen;
+    src: url(Evergreen-yL2e.ttf);
+}
+
 
 .box{
     background-color: #3a4928;
@@ -76,7 +90,7 @@ a:active { text-decoration: underline; }
     background-color: #3a4928;
     overflow: auto;
     color: #e6deb9;
-    font-family: Arial;
+    font-family: 'TrajanPro-Bold';
 }
 
 /* Plaserer linkene riktig*/
@@ -84,7 +98,7 @@ a:active { text-decoration: underline; }
     float: left;
     text-align: center;
     padding: 14px 16px;
-    font-size: 25px;    
+    font-size: 25px;   
 }
 
 #top > a > img{
@@ -131,6 +145,7 @@ a:active { text-decoration: underline; }
     padding: 15px;
     margin: 10px;
     font-size: 90%;
+    font-family: TrajanPro-Regular;
 }
 
 .info > h2{
