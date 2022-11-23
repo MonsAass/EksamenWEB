@@ -1,14 +1,16 @@
+
 form{
-    width: 90%;
+    width: 50%;
     margin-left: 2%;
     padding: 10px;
+    display: inline-block;
 }
 .FormElem{
     margin: 20px;
 }
 
 .FormElem.inline{
-    width: 30%;
+    width: 42%;
     display: inline-block;
     
 }
@@ -25,4 +27,8 @@ input, textarea{
 textarea{
     height: 250px;
     width: 95%;
+}
+
+#helelokalet{
+    display: inline-block;
 }
