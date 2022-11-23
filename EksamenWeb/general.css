@@ -208,10 +208,20 @@ a.tilTopp:hover {
     height: 100%;
     object-fit: cover;
     }
+.grid_1 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
 
-.grid_2 > p{
+.grid_2 > bildetekst{
     font-size: 15px;
-    margin-top: 1px;
+    margin-bottom: 10px;
+}
+.grid_1 > bildetekst{
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .knapp{
