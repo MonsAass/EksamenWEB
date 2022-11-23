@@ -2,11 +2,10 @@
 form{
     width: 50%;
     margin-left: 2%;
-    padding: 10px;
-    display: inline-block;
+    display: inline-block;   
 }
 .FormElem{
-    margin: 20px;
+    margin: 10px;
 }
 
 .FormElem.inline{
@@ -16,19 +15,15 @@ form{
 }
 label{
     display: block;
-    padding-bottom: 10px;
+    
 }
 input, textarea{
     padding: 10px;
     width: 99%;
-    border: 2px solid #777;
+    border: 2px solid black;
     box-sizing: border-box;
 }
 textarea{
     height: 250px;
-    width: 95%;
-}
-
-#helelokalet{
-    display: inline-block;
+    width: 100%;
 }
