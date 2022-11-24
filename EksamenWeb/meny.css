@@ -1,6 +1,5 @@
 /* Styler menyen, lager den inni sin egen boks*/
 .meny, .allergener{
-    font-family: 'TrajanPro-Regular', Times, serif;
     text-align: center;
     
 }
@@ -24,7 +23,7 @@
 
 .meny > h1{
    margin-top: 10px; 
-   font-family: 'TrajanPro-Bold';
+    
 }
 
 /* Setter symbolene for allergier fint ved siden av hverandre*/

@@ -18,6 +18,12 @@ body{
     background-size: cover; 
     
     font-size: 20px;
+    line-height: 110%;
+    font-family: 'TrajanPro-Regular'
+}
+
+body > h1{
+    font-family: "TrojanPro-Bold";
 }
 
 /*gir links samme farge som resten av teksten*/
@@ -48,7 +54,6 @@ a:active { text-decoration: underline; }
 
 .box{
     background-color: #3a4928;
-    font-family: Arial;
     overflow: hidden;
     color: #e6deb9;
     width: 65%;
@@ -66,7 +71,6 @@ a:active { text-decoration: underline; }
 
 .boxinv{
     background-color: #e6deb9;
-    font-family: Arial;
     overflow: hidden;
     width: 65%;
     margin: auto;
@@ -145,7 +149,6 @@ a:active { text-decoration: underline; }
     padding: 15px;
     margin: 10px;
     font-size: 90%;
-    font-family: TrajanPro-Regular;
 }
 
 .info > h2{
@@ -169,7 +172,8 @@ hr.bunn {
 }
 
 a.tilTopp{
-    color: #907a48; 
+    color: #e6deb9; 
+    text-shadow: 0 0 3px #3b2e1e, 0 0 3px #3b2e1e;
     font-size: 60px;
     position: fixed;
     bottom: 15px;
@@ -245,7 +249,7 @@ a.tilTopp:hover {
     display:inline-block;
     padding:2px 6px;
     border:3px solid #3a4928;
-    margin:0 1px 1px 0;
+    margin:2px;
     border-radius: 1px;
     box-sizing: border-box;
     background-color: #4B6B3C;
@@ -264,7 +268,7 @@ a.tilTopp:hover {
     display:inline-block;
     padding:2px 6px;
     border:3px solid #3b2e1e;
-    margin:0 1px 1px 0;
+    margin:2px;
     border-radius: 1px;
     box-sizing: border-box;
     background-color: #e6deb9;
@@ -333,7 +337,7 @@ a.tilTopp:hover {
 
 @media only screen and (max-width:800px){
     * > p{
-        font-size: 17px;
+        font-size: 16px;
         }
     * > h1{
         font-size: 27px;
@@ -348,9 +352,10 @@ a.tilTopp:hover {
 
     .info{
         height: 300px;
-        font-size: 93%;
         width: 360px;
     }
+
+
 
     .grid{
         grid-template-rows: 0.5fr 1fr;
