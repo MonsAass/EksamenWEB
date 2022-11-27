@@ -11,6 +11,36 @@
 </head>
 <body>
 
+
+
+<!--jobber med dette-->
+
+
+<nav id="meny_bar">
+    <a onclick="openSlideMenu()">
+        <img src="menybar.png" alt="meny for navigasjon">
+    </a>
+</nav>
+
+<div id="nav_meny" class="box">
+
+    <lukk>
+        <a onclick="closeMenu()" class="knappinv"> X </a>
+    </lukk>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nam ipsum eius quod aut et voluptatem, doloribus perferendis? 
+        Nam incidunt facilis illo accusantium tempora aut distinctio, at placeat ipsum ratione quasi.</h1>
+
+</div>
+
+
+
+
+
+
+
+
 <header id = "top">
     <!-- Logoen til Kongla -->
     <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
@@ -44,7 +74,7 @@
     <a href="brukervennlighet.html" target="_self">
         <infoTop>Brukervennlighet</infoTop>
     </a>
-    
+
 </header>
 
 <div class="space"></div>
@@ -190,5 +220,18 @@
 
 </footer>
     
+<script>
+    function openSlideMenu(){
+        document.getElementById("nav_meny").style.display="block"
+        document.getElementsByName("bakgrunn.jgp").style.filter="blur(10px)"
+    }
+
+    function closeMenu(){
+        document.getElementById("nav_meny").style.display="none"
+    }
+</script>
+
+
+
 </body>
 </html>
