@@ -1,14 +1,7 @@
-/* Styler menyen, lager den inni sin egen boks*/
-.meny, .allergener{
-    font-family: 'TrajanPro-Regular', Times, serif;
-    text-align: center;
-    
+/* sentrerer teksten i menyen*/
+.meny, .allergener{ 
+    text-align: center;   
 }
-
-.allergener{
-    width: 50%;
-}
-
 
 /* Styler hr, h1 og allergisymbolene i menyen*/
 
@@ -24,10 +17,10 @@
 
 .meny > h1{
    margin-top: 10px; 
-   font-family: 'TrajanPro-Bold';
+    
 }
 
-/* Setter symbolene for allergier fint ved siden av hverandre*/
+/* Setter symbolene for allergier fint ved siden av hverandre i menyen*/
 .column {
     float: none;
 }
@@ -39,9 +32,16 @@
 
 
 /* Allergikart */
-.allergener > h2{
-    margin-top: 0;
+
+.allergener{ 
+    width: 60%; 
 }
+
+.allergener > h2{ 
+    margin-top: 0; 
+}
+
+/*lager en flexbox*/
 
 .allergikart{
     padding-left: 3px;
@@ -49,9 +49,11 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
 }
 
+/*styler innholdet i allergikartet*/
 .allergikart > div{ 
     text-align: center;
     font-size: 18px;
@@ -66,12 +68,15 @@
 
 }
 
+
+/*skalerer ned med skjermstørrelse*/
+
 @media only screen and (max-width:1510px){
     .allergikart > div{
         width: 12.5%;
-        font-size: 16px;
-        margin-left: 6px;
-        margin-right: 6px;
+        font-size: 14px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 
     .allergikart > div > img{
@@ -80,15 +85,36 @@
 
 }
 
+
+/*lager et vertikalt allergikart for mobil/smale skjermer*/
 @media only screen and (max-width:800px){
+
+    .allergener{
+        width: 34%;
+    }
+
+    .allergener_mobil{
+        display: flex;
+        align-content: center;
+    }
+
+    .allergikart{
+        flex-direction: column;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     .allergikart > div{
-        width: 10%;
-        font-size: 13px;
-        margin-left: 5px;
-        margin-right: 5px;
+        width: 50%;
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        line-height: 42px;
     }
 
     .allergikart > div > img{
-        width: 25px;
+        width: 27px;
     }
 }
