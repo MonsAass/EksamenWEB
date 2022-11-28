@@ -52,7 +52,7 @@
         
 
     <div id="reservering" class="boxinv grid">
-        <form style="float: left;" class="grid_1" method="get">
+        <form id="formRes" class="grid_1" method="get" onsubmit="svar()">
             <H1>Reservering av bord</H1>
             <p>Fyll ut feltene under og trykk på reserver for å reservere et bord</p>   
                 
@@ -83,7 +83,16 @@
             </div> 
             <div class="FormElem inline">
                 <input type="submit" value="Reserver">
-            </div>           
+
+            </div>
+
+            <!--script til når du submitter form-->
+            <script>
+                function svar(){
+                    window.open("Svarform.html");
+                }
+            </script>
+            
             
         </form>
         <div class="grid_2">
