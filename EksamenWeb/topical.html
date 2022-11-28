@@ -9,6 +9,66 @@
     <link rel="general stylesheet" href="general.css">
 </head>
 <body>
+
+<!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
+
+
+<div id="nav_meny">
+
+    <div class="lukk">
+        <a onclick="closeMenu()"> X </a>
+    </div>
+
+    <div>    
+        <a href="index.html" target="self">
+        Hjem
+        </a>
+    </div>
+        
+    <div>       
+        <a onclick="closeMenu()" href="#tider">
+        Åpningstider
+        </a>
+    </div>
+        
+    <div>
+        <a href="Meny.html">
+        Meny
+        </a>
+    </div>
+        
+    <div>
+        <a onclick="closeMenu()" href="#kontakt">
+        Kontakt oss
+        </a>
+    </div>
+        
+    <div>
+        <a href="booking.html" target="_self">
+        Booking
+        </a>
+    </div>
+        
+    <div>
+        <a href ="topical.html" target="_self">
+        Topical
+        </a>
+    </div>
+        
+    <div>
+        <a href="brukervennlighet.html" target="_self">
+        Brukervennlighet
+        </a>
+    </div>
+</div>
+
+
+<nav id="meny_bar">
+    <a onclick="openSlideMenu()">
+        <img src="menybar.png" alt="meny for navigasjon">
+    </a>
+</nav>
+
     <!-- Lager id for headeren-->
     <header id = "top">
         <!-- Logoen til Kongla -->
@@ -45,6 +105,10 @@
         </a>
         
     </header>
+
+<div id="main">
+
+    <div class="space"></div>
 
     <h1>Dette er topical</h1>
 
@@ -107,11 +171,46 @@
         </a>
         </a>
 
-        <!-- Link opp til toppen av siden -->
-    <a class="tilTopp" href="#top">
-        ^
-    </a>
-
     </footer>
+
+</div>
+
+<!-- Link opp til toppen av siden -->
+<a onclick="tilTopp()" class="tilTopp">
+    ^
+</a>
+
+<script>
+
+    /*åpner menyen, blurer bakgrunnen 
+    og gjør at man ikke kan scrolle på siden*/
+    function openSlideMenu(){
+        document.getElementById("nav_meny").style.height="45%"
+        document.getElementById("main").style.filter="blur(2px)"
+        document.getElementById("footer").style.filter="blur(2px)"
+        document.body.style.overflow="hidden"
+    }
+
+    /*lukker menyen, fjerner blur fra bakgrunnen 
+    og gjør at man kan scrolle igjen*/
+    function closeMenu(){
+        document.getElementById("nav_meny").style.height="0%"
+        document.getElementById("main").style.filter="blur(0)"
+        document.getElementById("footer").style.filter="blur(0px)"
+        document.body.style.overflow="visible"
+
+        /*så links på siden funker etter man åpner/lukker meny*/
+        document.getElementsByTagName("a").style.pointerEvents="none"
+        
+    }
+
+    /*tar brukeren opp til toppen av siden*/
+    function tilTopp(){
+        document.body.scrollTop= 0 ;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
 </body>
 </html>

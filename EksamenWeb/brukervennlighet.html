@@ -8,6 +8,66 @@
     <link rel="general stylesheet" href="general.css">
 </head>
 <body>
+
+<!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
+
+
+<div id="nav_meny">
+
+    <div class="lukk">
+        <a onclick="closeMenu()"> X </a>
+    </div>
+
+    <div>    
+        <a href="index.html" target="self">
+        Hjem
+        </a>
+    </div>
+        
+    <div>       
+        <a onclick="closeMenu()" href="#tider">
+        Åpningstider
+        </a>
+    </div>
+        
+    <div>
+        <a href="Meny.html">
+        Meny
+        </a>
+    </div>
+        
+    <div>
+        <a onclick="closeMenu()" href="#kontakt">
+        Kontakt oss
+        </a>
+    </div>
+        
+    <div>
+        <a href="booking.html" target="_self">
+        Booking
+        </a>
+    </div>
+        
+    <div>
+        <a href ="topical.html" target="_self">
+        Topical
+        </a>
+    </div>
+        
+    <div>
+        <a href="brukervennlighet.html" target="_self">
+        Brukervennlighet
+        </a>
+    </div>
+</div>
+
+
+<nav id="meny_bar">
+    <a onclick="openSlideMenu()">
+        <img src="menybar.png" alt="meny for navigasjon">
+    </a>
+</nav>
+
     <!-- Lager id for headeren-->
     <header id = "top">
         <!-- Logoen til Kongla -->
@@ -45,7 +105,10 @@
         
     </header>
 
+<div id="main">
+
     <div class="space"></div>
+
     <div class="boxinv">
         <h1>Brukervennlighet</h1>
         <h2>Wave</h2>
@@ -56,70 +119,103 @@
      <!-- Footer -->
    <footer id="footer">
 
-    <div id="tider" class="info boxinv">
-        <h2>ÅPNINGSTIDER RESTURANT</h2>
-        <p>
-            <strong>Mandag:</strong>
-            <br>
-            Stengt
-            <br>
-            -<br> 
-            <strong>Tirsdag-lørdag:</strong>
-            <br>
-            Kl. 12.00-24.00<br>
-            (Siste ankomst 21.00).
-            <br>
-            -<br>
-            <strong>Søndag:</strong>
-            <br>
-            Kl. 12.00-23.00
-            <br>
-            (Siste ankomst 20.00).
-        </p>
-    </div>
+        <div id="tider" class="info boxinv">
+            <h2>ÅPNINGSTIDER RESTURANT</h2>
+            <p>
+                <strong>Mandag:</strong>
+                <br>
+                Stengt
+                <br>
+                -<br> 
+                <strong>Tirsdag-lørdag:</strong>
+                <br>
+                Kl. 12.00-24.00<br>
+                (Siste ankomst 21.00).
+                <br>
+                -<br>
+                <strong>Søndag:</strong>
+                <br>
+                Kl. 12.00-23.00
+                <br>
+                (Siste ankomst 20.00).
+            </p>
+        </div>
 
-    <div class="info boxinv">
-        <h2>ADRESSE</h2>
-        <p>
-            <a href= "https://www.google.com/maps/place/Ekebergrestauranten/@59.8994863,10.7618616,17z/data=!3m1!4b1!4m5!3m4!1s0x46416ef275110fdd:0x109741c667c86263!8m2!3d59.8994925!4d10.7618649" target="_blank">
-            Kongleveien 88, 0891 Oslo</a>
-            <hr>
-        </p>
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.3166192138461!2d10.729330976104743!3d60.03773233503087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNjDCsDAyJzE1LjgiTiAxMMKwNDMnNDkuNSJF!5e0!3m2!1sno!2sno!4v1668625877210!5m2!1sno!2sno" width="90%" height="65%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
-    </div>
+        <div class="info boxinv">
+            <h2>ADRESSE</h2>
+            <p>
+                <a href= "https://www.google.com/maps/place/Ekebergrestauranten/@59.8994863,10.7618616,17z/data=!3m1!4b1!4m5!3m4!1s0x46416ef275110fdd:0x109741c667c86263!8m2!3d59.8994925!4d10.7618649" target="_blank">
+                Kongleveien 88, 0891 Oslo</a>
+                <hr>
+            </p>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.3166192138461!2d10.729330976104743!3d60.03773233503087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNjDCsDAyJzE1LjgiTiAxMMKwNDMnNDkuNSJF!5e0!3m2!1sno!2sno!4v1668625877210!5m2!1sno!2sno" width="90%" height="65%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+        </div>
 
-    <div class="info boxinv">
-        <h2 id="kontakt">KONTAKT OSS</h2>
-        <p>
-            <strong>Telefon:</strong>
-            <br>
-            <a href=tel: +47 98 45 19 44 target="_blank">
-            +47 98 45 19 44</a>
-            <br>
-            -<br>
-            <strong>Mail:</strong> 
-            <br>
-            <a href= "mailto:kongla_booking@mailmailsen.no" target="_blank">kongla_booking@mailmailsen.no</a>
-        </p>
-    </div>
+        <div class="info boxinv">
+            <h2 id="kontakt">KONTAKT OSS</h2>
+            <p>
+                <strong>Telefon:</strong>
+                <br>
+                <a href=tel: +47 98 45 19 44 target="_blank">
+                +47 98 45 19 44</a>
+                <br>
+                -<br>
+                <strong>Mail:</strong> 
+                <br>
+                <a href= "mailto:kongla_booking@mailmailsen.no" target="_blank">kongla_booking@mailmailsen.no</a>
+            </p>
+        </div>
 
-    <div class="space"></div>
+        <div class="space"></div>
 
 
 
-    <hr class="bunn">
-    <br>
+        <hr class="bunn">
+        <br>
 
-    <a href="index.html">
-        <img src="kongla.png" alt="Logo til resturant" width="190px" height="190px">
-    </a>
+        <a href="index.html">
+            <img src="kongla.png" alt="Logo til resturant" width="190px" height="190px">
+        </a>
 
-    <!-- Link opp til toppen av siden -->
-    <a class="tilTopp" href="#top">
-        ^
-    </a>
+    </footer>
+</div>
 
-</footer>
+<!-- Link opp til toppen av siden -->
+<a onclick="tilTopp()" class="tilTopp">
+    ^
+</a>
+
+<script>
+
+    /*åpner menyen, blurer bakgrunnen 
+    og gjør at man ikke kan scrolle på siden*/
+    function openSlideMenu(){
+        document.getElementById("nav_meny").style.height="45%"
+        document.getElementById("main").style.filter="blur(2px)"
+        document.getElementById("footer").style.filter="blur(2px)"
+        document.body.style.overflow="hidden"
+    }
+
+    /*lukker menyen, fjerner blur fra bakgrunnen 
+    og gjør at man kan scrolle igjen*/
+    function closeMenu(){
+        document.getElementById("nav_meny").style.height="0%"
+        document.getElementById("main").style.filter="blur(0)"
+        document.getElementById("footer").style.filter="blur(0px)"
+        document.body.style.overflow="visible"
+
+        /*så links på siden funker etter man åpner/lukker meny*/
+        document.getElementsByTagName("a").style.pointerEvents="none"
+        
+    }
+
+    /*tar brukeren opp til toppen av siden*/
+    function tilTopp(){
+        document.body.scrollTop= 0 ;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
     
 </body>
 </html>
