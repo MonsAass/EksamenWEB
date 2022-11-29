@@ -257,31 +257,42 @@
 
 <script>
 
+    /*variabel som sjekker høyden til vinduet*/
+    var høyde = window.matchMedia("(max-height: 600px)");
+
     /*åpner menyen, blurer bakgrunnen 
     og gjør at man ikke kan scrolle på siden*/
     function openSlideMenu(){
-        document.getElementById("nav_meny").style.height="50%"
-        document.getElementById("main").style.filter="blur(2px)"
-        document.getElementById("footer").style.filter="blur(2px)"
-        document.body.style.overflow="hidden"
+
+        /*if-statement som gir menyen høyde basert på høyden til vinduet*/
+        if (høyde.matches){
+            document.getElementById("nav_meny").style.height = "100vh" ;
+        }
+        else{
+            document.getElementById("nav_meny").style.height = "55vh" ;
+        }
+        
+        document.getElementById("main").style.filter="blur(2px)";
+        document.getElementById("footer").style.filter="blur(2px)";
+        document.body.style.overflow="hidden";
     }
 
     /*lukker menyen, fjerner blur fra bakgrunnen 
     og gjør at man kan scrolle igjen*/
     function closeMenu(){
-        document.getElementById("nav_meny").style.height="0%"
-        document.getElementById("main").style.filter="blur(0)"
-        document.getElementById("footer").style.filter="blur(0px)"
-        document.body.style.overflow="visible"
+        document.getElementById("nav_meny").style.height= "0";
+        document.getElementById("main").style.filter="blur(0)";
+        document.getElementById("footer").style.filter="blur(0px)";
+        document.body.style.overflow="visible";
 
         /*så links på siden funker etter man åpner/lukker meny*/
-        document.getElementsByTagName("a").style.pointerEvents="none"
+        document.getElementsByTagName("a").style.pointerEvents="none";
         
     }
 
     /*tar brukeren opp til toppen av siden*/
     function tilTopp(){
-        document.body.scrollTop= 0 ;
+        document.body.scrollTop= 0;
         document.documentElement.scrollTop = 0;
     }
 </script>

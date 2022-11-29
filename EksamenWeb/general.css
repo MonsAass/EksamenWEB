@@ -128,6 +128,10 @@ a:active { text-decoration: underline; }
     /*vises ikke før skjermen er liten nok (media query lengre ned)*/
     display: none;
     z-index: 1;
+
+    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+    -moz-animation: glow 0.7s ease-in-out infinite alternate;
+    animation: glow 0.7s ease-in-out infinite alternate;
 }
 
 #meny_bar > a > img{
@@ -273,9 +277,9 @@ hr.bunn {
     margin: 15px;
 }
 
-a.tilTopp{
+.tilTopp{
     color: #e6deb9; 
-    font-size: 60px;
+    font-size: 50px;
     position: fixed;
     bottom: 15px;
     right: 25px; 
@@ -289,7 +293,15 @@ a.tilTopp{
     animation: glow 0.7s ease-in-out infinite alternate;
 }
 
-a.tilTopp:hover { 
+.tilTopp > a{
+    border:#4B6B3C solid 2px;
+    background-color: #3a4928;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 12px;
+}
+
+.tilTopp > a:hover { 
     text-decoration: none;
     font-weight: 1000;
     cursor: pointer;
