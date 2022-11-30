@@ -26,8 +26,12 @@ body > h1{
     font-family: "TrojanPro-Bold";
 }
 
+button{ font-family: "TrojanPro-Bold";}
+
 /*gir links samme farge som resten av teksten*/
 a { color: inherit; }
+
+
 
 /* Styler links*/
 a:link { text-decoration: none; }
@@ -134,12 +138,19 @@ a:active { text-decoration: underline; }
     animation: glow 0.7s ease-in-out infinite alternate;
 }
 
-#meny_bar > a > img{
-    width: 45px;
-    height: auto;
+#meny_bar > button{
+    padding: 0;
+    border: none;
+    background: none;
 }
 
-#meny_bar > a:hover{
+#meny_bar > button > img{
+    width: 45px;
+    height: auto;
+    
+}
+
+#meny_bar > button:hover{
     cursor: pointer;
 }
 
@@ -197,18 +208,19 @@ a:active { text-decoration: underline; }
 
 
 /*lager og styler en knapp for å lukke menyen*/
-.lukk > a{
+.lukk > button{
     position: absolute;
-    top: 30px;
-    left: 26.5px;
+    top: 26px;
+    left: 26px;
     padding: 4px 6px 4px 6px;
     border: solid black 2px;
     color: black;
     font-weight: 1000;
     font-size: 30px;
+    background: none;
 }
 
-.lukk > a:hover{
+.lukk > button:hover{
     color: #d4bf88;
     background-color: black;
     cursor: pointer;
@@ -278,32 +290,39 @@ hr.bunn {
 }
 
 .tilTopp{
-    color: #e6deb9; 
-    font-size: 50px;
+     
+    
     position: fixed;
     bottom: 15px;
     right: 25px; 
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
     font-weight: 500;
-    height: 80px;
-    width: 70px;
-    text-align: center;
+    border:#4B6B3C solid 2px;
+    background-color: #3a4928;
+
+
+
+}
+
+.tilTopp > button{
+
+    padding: 0;
+    border: none;
+    background: none;
+    
+    color: #e6deb9;
+    font-size: 50px;
 
     -webkit-animation: glow 0.7s ease-in-out infinite alternate;
     -moz-animation: glow 0.7s ease-in-out infinite alternate;
     animation: glow 0.7s ease-in-out infinite alternate;
 }
 
-.tilTopp > a{
-    border:#4B6B3C solid 2px;
-    background-color: #3a4928;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 12px;
-}
-
-.tilTopp > a:hover { 
-    text-decoration: none;
-    font-weight: 1000;
+.tilTopp > button:hover { 
     cursor: pointer;
 }
 
