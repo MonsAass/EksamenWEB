@@ -3,15 +3,14 @@ form{
     margin-left: 2%;
     display: inline-block;   
 }
+
 .FormElem{
     margin: 10px;
-}
-
-.FormElem.inline{
     width: 42%;
     display: inline-block;
-    
 }
+  
+
 label{
     display: block;
     
