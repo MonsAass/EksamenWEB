@@ -4,150 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Brukervennlighet</title>
-    <meta name="forfatter" content="Gruppe 112">
-    <meta name="beskrivelse" content="Side om brukervennlighet">
-
+    <title>Document</title>
     <link rel="general stylesheet" href="../../general/general.css">
     <link rel="brukervennlighet stylesheet" href="brukervennlighet.css">
 </head>
 <body>
 
-<!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
 
+    <div id="nav_meny">
 
-<div id="nav_meny">
-
-    <!--gjør dette til en button-->
-
-    <div class="lukk">
-        <button onclick="closeMenu()" class="meny_valg" tabindex="-1" alt="kryss ut menyen"> X </button>
+        <!--gjør dette til en button-->
+    
+        <div class="lukk">
+            <button onclick="closeMenu()" class="meny_valg" tabindex="-1" alt="kryss ut menyen"> X </button>
+        </div>
+    
+    
+    
+    
+        <div>    
+            <a href="../index/index.html" class="meny_valg" tabindex="-1">
+            Hjem
+            </a>
+        </div>
+            
+        <div>       
+            <a onclick="closeMenu()" href="#tider" class="meny_valg" tabindex="-1">
+            Åpningstider
+            </a>
+        </div>
+            
+        <div>
+            <a href="../meny/Meny.html" class="meny_valg" tabindex="-1">
+            Meny
+            </a>
+        </div>
+            
+        <div>
+            <a onclick="closeMenu()" href="#kontakt" class="meny_valg" tabindex="-1">
+            Kontakt oss
+            </a>
+        </div>
+            
+        <div>
+            <a href="../booking/booking.html" target="_self" class="meny_valg" tabindex="-1">
+            Booking
+            </a>
+        </div>
+            
+        <div>
+            <a href ="../topical/topical.html" target="_self" class="meny_valg" tabindex="-1">
+            Topical
+            </a>
+        </div>
+            
+        <div>
+            <a href="../brukervennelighet/brukervennlighet.html" target="_self" class="meny_valg" tabindex="-1">
+            Brukervennlighet
+            </a>
+        </div>
     </div>
-
-
-
-
-    <div>    
-        <a href="../index/index.html" class="meny_valg" tabindex="-1">
-        Hjem
+    
+    
+    
+    
+    
+    <!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
+    <nav id="meny_bar">
+        <button onclick="openSlideMenu()" tabindex="8"> 
+            <img src="../../bilder/general_bilder/menybar.png" alt="åpne meny for navigasjon">
+        </button>
+    </nav>
+    
+    
+    
+    
+    
+    
+    <header id = "top">
+        <!-- Logoen til Kongla -->
+        <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
+        <a href="../index/index.html">
+            <img src="../../bilder/general_bilder/kongla.png" alt="Logo til resturant">
         </a>
-    </div>
-        
-    <div>       
-        <a onclick="closeMenu()" href="#tider" class="meny_valg" tabindex="-1">
-        Åpningstider
+        <!-- Liste for ulik info -->
+        <a href="../index/index.html">
+        <infoTop>Hjem</infoTop>
         </a>
-    </div>
-        
-    <div>
-        <a href="../meny/Meny.html" class="meny_valg" tabindex="-1">
-        Meny
+            
+        <a href="#tider">
+        <infoTop>Åpningstider</infoTop>
         </a>
-    </div>
-        
-    <div>
-        <a onclick="closeMenu()" href="#kontakt" class="meny_valg" tabindex="-1">
-        Kontakt oss
+    
+        <a href="../meny/Meny.html">
+        <infoTop>Meny</infoTop>
         </a>
-    </div>
-        
-    <div>
-        <a href="../booking/booking.html" target="_self" class="meny_valg" tabindex="-1">
-        Booking
+    
+        <a href="#kontakt">
+        <infoTop>Kontakt oss</infoTop>
         </a>
-    </div>
-        
-    <div>
-        <a href ="../topical/topical.html" target="_self" class="meny_valg" tabindex="-1">
-        Topical
+    
+        <a href="../booking/booking.html" target="_self">
+            <infoTop>Booking</infoTop>
         </a>
-    </div>
-        
-    <div>
-        <a href="../brukervennelighet/brukervennlighet.html" target="_self" class="meny_valg" tabindex="-1">
-        Brukervennlighet
+    
+        <a href ="../topical/topical.html" target="_self">
+            <infoTop>Topical</infoTop>
         </a>
-    </div>
-</div>
-
-
-
-
-
-<!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
-<nav id="meny_bar">
-    <button onclick="openSlideMenu()" tabindex="8"> 
-        <img src="../../bilder/general_bilder/menybar.png" alt="åpne meny for navigasjon">
-    </button>
-</nav>
-
-
-
-
-
-
-<header id = "top">
-    <!-- Logoen til Kongla -->
-    <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
-    <a href="../index/index.html">
-        <img src="../../bilder/general_bilder/kongla.png" alt="Logo til resturant">
-    </a>
-    <!-- Liste for ulik info -->
-    <a href="../index/index.html">
-    <infoTop>Hjem</infoTop>
-    </a>
-        
-    <a href="#tider">
-    <infoTop>Åpningstider</infoTop>
-    </a>
-
-    <a href="../meny/Meny.html">
-    <infoTop>Meny</infoTop>
-    </a>
-
-    <a href="#kontakt">
-    <infoTop>Kontakt oss</infoTop>
-    </a>
-
-    <a href="../booking/booking.html" target="_self">
-        <infoTop>Booking</infoTop>
-    </a>
-
-    <a href ="../topical/topical.html" target="_self">
-        <infoTop>Topical</infoTop>
-    </a>
-    <a href="../brukervennelighet/brukervennlighet.html" target="_self">
-        <infoTop>Brukervennlighet</infoTop>
-    </a>
-
-
-</header>
-
+        <a href="../brukervennelighet/brukervennlighet.html" target="_self">
+            <infoTop>Brukervennlighet</infoTop>
+        </a>
+    
+    
+    </header>
 
 <div id="main">
 
     <div class="space"></div>
+    
 
-    <div id="wave1" class="boxinv">
-        <h1>Brukervennlighet</h1>
+    <div class="boxinv">
+        <div id="wave1" class="grid">
+            <div class="grid_1">
+                <h1>Brukervennlighet</h1>
+                <h2>Wave</h2>
+                <p>
+                    Vi brukte hjelpemiddelet Wave for å teste nettsidens brukervennlighet og tilgjengelighet for alle. 
+                    Vi startet med å teste velkommen siden vår og fikk da at vi hadde 8 kontrastfeil og en varsel. 
+                    En av kontrastfeilene var tilknyttet pilen som tar deg til toppen av siden. For å fikse det satt vi en fast bakgrunn 
+                    bak pilen sånn at den alltid skulle være synlig.
+
+                </p>
+            </div>
+            <div class="grid_2">
+                <img src="../../bilder/brukervenlighet/wave1.JPG" alt="bilde av wave hjelpemiddelet">
+                
+            </div>
+                
         
-        <h2>Wave</h2>
-        <p>
-            Vi brukte hjelpemiddelet Wave for å teste nettsidens brukervennlighet og tilgjengelighet for alle. 
-            Vi startet med å teste velkommen siden vår og fikk da at vi hadde 8 kontrastfeil. 
-            Alle disse var tilknyttet en animasjon vi hadde til pilen som tar deg til toppen av siden.
-        </p>
+
+            <div id="pil" class="grid_3">
+                <img src="../../bilder/brukervenlighet/wavePilGammel.JPG" alt="bilde av den gamle pilen">    
+                <img src="../../bilder/brukervenlighet/wavePilNy.JPG" alt="bilde av den nye pilen">
+                <p style="font-size: 14;">Før og etter bilde av pilen</p>
+            </div>            
+        
+            <div class="grid_4">
+                <h2>Kontrast verktøy</h2>
+                    <p>
+                        Wave har et inebyd kontrastvekrtøy som viser hvor kontrastfeilen er og du har mulighet til å endre fargen på stedet så du kan finne en løsning med en gang.
+                        selv med dette verktøyet klarte vi ikke lokalisere de 7 feilene som er igjen. 
+                    </p>
+
+            </div>
+        </div>
+        <h2>Gammel mann</h2>
+            <p>Vi testet nettsiden på en eldre person for å se om de klarte å navigere siden. 
+                Så spurte vi om tilbakemelidinger for å høre om det var noe de manglet eller ønsket.</p>
             
-        <img src="wave1.JPG" alt="bilde av wave hjelpemiddelet" width="285" height="472">
-            
+        <h2>tab indeks</h2>
+            <p>Vi la til tabindex for at det skulle være mulig å bruke siden uten bruk av tastatur</p>
+
+        
     </div>
+
     <div class="space"></div>
 
 
 
-     <!-- Footer -->
-     <footer id="footer">
+    <!-- Footer -->
+    <footer id="footer">
 
         <div id="tider" class="info boxinv">
             <h2>ÅPNINGSTIDER RESTURANT</h2>
@@ -223,6 +249,8 @@
 
 
 <script src="../../general/scripts.js"></script>
-    
+
+
+
 </body>
 </html>
