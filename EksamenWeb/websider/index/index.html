@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velkommen!</title>
 
-    <link rel="general stylesheet" href="general.css">
-    <link rel="meny stylesheet" href="meny.css">
+    <!--metadata og styles/scripts-->
+    <title>Velkommen!</title>
+    <meta name="forfatter" content="Gruppe 112">
+    <meta name="beskrivelse" content="Velkommen-side">
+
+    <link rel="general stylesheet" href="../../general/general.css">
+    <link rel="index stylesheet" href="index.css">
 </head>
 <body>
 
@@ -17,14 +21,14 @@
     <!--gjør dette til en button-->
 
     <div class="lukk">
-        <button onclick="closeMenu()" class="meny_valg" tabindex="0"> X </button>
+        <button onclick="closeMenu()" class="meny_valg" tabindex="-1" alt="kryss ut menyen"> X </button>
     </div>
 
 
 
 
     <div>    
-        <a href="index.html" class="meny_valg" tabindex="-1">
+        <a href="../index/index.html" class="meny_valg" tabindex="-1">
         Hjem
         </a>
     </div>
@@ -36,7 +40,7 @@
     </div>
         
     <div>
-        <a href="Meny.html" class="meny_valg" tabindex="-1">
+        <a href="../meny/Meny.html" class="meny_valg" tabindex="-1">
         Meny
         </a>
     </div>
@@ -48,19 +52,19 @@
     </div>
         
     <div>
-        <a href="booking.html" target="_self" class="meny_valg" tabindex="-1">
+        <a href="../booking/booking.html" target="_self" class="meny_valg" tabindex="-1">
         Booking
         </a>
     </div>
         
     <div>
-        <a href ="topical.html" target="_self" class="meny_valg" tabindex="-1">
+        <a href ="../topical/topical.html" target="_self" class="meny_valg" tabindex="-1">
         Topical
         </a>
     </div>
         
     <div>
-        <a href="brukervennlighet.html" target="_self" class="meny_valg" tabindex="-1">
+        <a href="../brukervennelighet/brukervennlighet.html" target="_self" class="meny_valg" tabindex="-1">
         Brukervennlighet
         </a>
     </div>
@@ -73,7 +77,7 @@
 <!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
 <nav id="meny_bar">
     <button onclick="openSlideMenu()" tabindex="8"> 
-        <img src="menybar.png" alt="meny for navigasjon">
+        <img src="../../bilder/general_bilder/menybar.png" alt="åpne meny for navigasjon">
     </button>
 </nav>
 
@@ -85,11 +89,11 @@
 <header id = "top">
     <!-- Logoen til Kongla -->
     <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
-    <a href="index.html">
-        <img src="kongla.png" alt="Logo til resturant">
+    <a href="../index/index.html">
+        <img src="../../bilder/general_bilder/kongla.png" alt="Logo til resturant">
     </a>
     <!-- Liste for ulik info -->
-    <a href="index.html">
+    <a href="../index/index.html">
     <infoTop>Hjem</infoTop>
     </a>
         
@@ -97,7 +101,7 @@
     <infoTop>Åpningstider</infoTop>
     </a>
 
-    <a href="Meny.html">
+    <a href="../meny/Meny.html">
     <infoTop>Meny</infoTop>
     </a>
 
@@ -105,14 +109,14 @@
     <infoTop>Kontakt oss</infoTop>
     </a>
 
-    <a href="booking.html" target="_self">
+    <a href="../booking/booking.html" target="_self">
         <infoTop>Booking</infoTop>
     </a>
 
-    <a href ="topical.html" target="_self">
+    <a href ="../topical/topical.html" target="_self">
         <infoTop>Topical</infoTop>
     </a>
-    <a href="brukervennlighet.html" target="_self">
+    <a href="../brukervennelighet/brukervennlighet.html" target="_self">
         <infoTop>Brukervennlighet</infoTop>
     </a>
 
@@ -137,7 +141,7 @@
                 <p>Lyst på en happening ute i skogen? 
                     Et fantastisk festlokale for å feire alle dine livs begivelser?</p>
                 <h3>
-                    <a alt="link til booking" href="booking.html" class="knapp">Kongla kan gi deg akkurat det!</a>
+                    <a alt="link til booking" href="../booking/booking.html" class="knapp">Kongla kan gi deg akkurat det!</a>
                 </h3>
             
                 <p>
@@ -154,7 +158,7 @@
 
             <!--Bildet av trehuset er hentet fra https://hostunusual.com/categories/host-unusual/bolt-farm-treehouse/ -->
             <div class="grid_2">
-                <img src="trehus_kongla.jpg" alt="bilde av lokalet">
+                <img src="../../bilder/index_bilder/trehus_kongla.jpg" alt="bilde av lokalet">
                 <bildetekst>Bildet hentet fra: <a alt="hvor bildet av lokalet er hentet fra" href="https://hostunusual.com/categories/host-unusual/bolt-farm-treehouse/" target="_blank">
                     Bolt Farm Treehouse</a></bildetekst>
             </div>
@@ -186,13 +190,13 @@
         </p>
 
         <p>
-        <a alt="link til meny" href="meny.html" class="knappinv">Meny</a>
+        <a alt="link til meny" href="../meny/meny.html" class="knappinv">Meny</a>
         
-        <a alt="link til booking" href="booking.html" class="knappinv">Booking</a>
+        <a alt="link til booking" href="../booking/booking.html" class="knappinv">Booking</a>
         
-        <a alt="link til brukervennlighet" href="brukervennlighet.html" class="knappinv">Brukervennlighet</a>
+        <a alt="link til brukervennlighet" href="../brukervennelighet/brukervennlighet.html" class="knappinv">Brukervennlighet</a>
         
-        <a alt="link til topical" href="topical.html" class="knappinv">Topical</a></div>
+        <a alt="link til topical" href="../topical/topical.html" class="knappinv">Topical</a></div>
         </p>
 
 
@@ -259,7 +263,7 @@
         <br>
 
         <a href="index.html">
-            <img src="kongla.png" alt="Logo til resturant" width="190px" height="190px">
+            <img src="../../bilder/general_bilder/kongla.png" alt="Logo til resturant" width="190px" height="190px">
         </a>
 
        
@@ -270,76 +274,14 @@
 
 
 <!-- Link opp til toppen av siden -->
-<div class="tilTopp" tabindex="10">
-    <button onclick="tilTopp()">
+<div class="tilTopp">
+    <button onclick="tilTopp()" alt="knapp til toppen av siden">
         ^
     </button>
 </div>
 
 
-<script>
-
-    /*variabel som sjekker høyden til vinduet*/
-    var høyde = window.matchMedia("(max-height: 600px)");
-
-    /*åpner menyen, blurer bakgrunnen 
-    og gjør at man ikke kan scrolle på siden*/
-    function openSlideMenu(){
-
-        /*if-statement som gir menyen høyde basert på høyden til vinduet*/
-        if (høyde.matches){
-            document.getElementById("nav_meny").style.height = "100vh" ;
-        }
-        else{
-            document.getElementById("nav_meny").style.height = "55vh" ;
-        }
-
-        document.getElementById("main").style.filter="blur(2px)";
-        document.getElementById("footer").style.filter="blur(2px)";
-        document.body.style.overflow="hidden";
-
-
-        /*gir alle linksa i nav_meny en tab index
-        så man kan trykke på de hvis man ikke kan bruke musepekeren
-        (univeral design)*/
-        var valg = document.querySelectorAll("div#nav_meny div");
-        var valget = document.querySelectorAll("div#nav_meny div a");
-
-        for(var i = 0, len = valg.length; i < len; i ++){
-            valget[i].tabIndex = i + 1; 
-        }
-
-    }
-
-    /*lukker menyen, fjerner blur fra bakgrunnen 
-    og gjør at man kan scrolle igjen*/
-    function closeMenu(){
-
-        document.getElementById("nav_meny").style.height= "0";
-
-        document.getElementById("main").style.filter="blur(0)";
-        document.getElementById("footer").style.filter="blur(0px)";
-        document.body.style.overflow="visible";
-
-
-
-        /*fjerner tab index fra alle linksa i nav_meny
-        så de ikke er tilgjengelig når menyen er lukket*/
-        var valg = document.querySelectorAll("div#nav_meny div");
-        var valget = document.querySelectorAll("div#nav_meny div a");
-
-        for(var i = 0, len = valg.length; i < len; i ++){
-            valget[i].tabIndex = -1; 
-        }
-
-    }
-
-    /*tar brukeren opp til toppen av siden*/
-    function tilTopp(){
-        document.body.scrollTop= 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+<script src="../../general/scripts.js"></script>
 
 
 

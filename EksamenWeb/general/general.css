@@ -12,7 +12,7 @@ body{
 
     /* Styler bakgrunnen med et bilde
     Bildet er tatt fra www.wallpaperflare.com */
-    background-image: url(bakgrunn.jpg);
+    background-image: url(../bilder/general_bilder/bakgrunn.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 

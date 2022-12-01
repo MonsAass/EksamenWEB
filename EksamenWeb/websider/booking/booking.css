@@ -37,3 +37,14 @@ input[type=submit]{
     font-size: 15px;
     cursor: pointer;
 }
+
+
+#takk{
+    margin-top: 25vh;
+    margin-right: 15vw;
+    height: 25vh;
+    width: 60vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
