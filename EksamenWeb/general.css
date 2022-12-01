@@ -316,10 +316,11 @@ hr.bunn {
     
     color: #e6deb9;
     font-size: 50px;
-
+    
     -webkit-animation: glow 0.7s ease-in-out infinite alternate;
     -moz-animation: glow 0.7s ease-in-out infinite alternate;
     animation: glow 0.7s ease-in-out infinite alternate;
+    
 }
 
 .tilTopp > button:hover { 
