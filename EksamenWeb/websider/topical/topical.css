@@ -10,12 +10,8 @@ body{
     /* Fjerner margen*/
     margin: 0px;
 
-    /* Styler bakgrunnen med et bilde
-    Bildet er tatt fra www.wallpaperflare.com */
-    background-image: url(../bilder/general_bilder/bakgrunn.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
+    background-color: hsl(270, 25%, 87%);
+    transition: background-color 1s linear;
     
     font-size: 20px;
     line-height: 150%;
@@ -59,17 +55,17 @@ a:active { text-decoration: underline; }
 }
 
 .box{
-    background-color: #3a4928;
-    color: #e6deb9;
+    background-color: hsl(146, 25%, 20%);
+    color: hsl(270, 25%, 87%);
 }
 
 .box > h1{
     font-style: oblique;
-    color: #e6deb9;
+    color: hsl(270, 65%, 57%);
 }
 .box > h2{
     font-style: italic;
-    color: #e6deb9;
+    color: hsl(270, 65%, 57%);
 }
 
 .boxinv{
@@ -94,10 +90,10 @@ a:active { text-decoration: underline; }
 #top{
     margin: 0px;
     text-align: center;
-    background-color: #3a4928;
+    background-color: hsl(146, 25%, 20%);
     overflow: auto;
-    color: #e6deb9;
-    font-family: 'TrajanPro-Bold';
+    color: hsl(270, 65%, 57%);
+    font-family: 'SpaceMono-Bold';
     width: 100%;
 }
 
@@ -109,7 +105,7 @@ a:active { text-decoration: underline; }
     font-size: 25px;   
 }
 
-#top > a > img{
+#top  > img{
     width: 55px; 
     height: auto; 
     float: left;
@@ -117,8 +113,8 @@ a:active { text-decoration: underline; }
 
 /* Endrer farge når du tar musen over*/
 #top infoTop:hover{
-    background-color: #e6deb9;
-    color: #3a4928;
+    background-color: hsl(270, 65%, 57%);
+    color: hsl(146, 25%, 9%);
     cursor: pointer;
 }
 
@@ -157,8 +153,8 @@ a:active { text-decoration: underline; }
 
 /*styler navigasjonsmenyen*/
 #nav_meny{
-    background-color: #3a4928;
-    color: #e6deb9;
+    background-color: hsl(146, 25%, 20%);
+    color: hsl(270, 65%, 57%);
     text-align: center;
     font-size: 25px;
     line-height: 110%;
@@ -182,7 +178,7 @@ a:active { text-decoration: underline; }
 }
 
 #nav_meny > div > a:hover{
-    color:#d4bf88;
+    color: hsl(270, 25%, 87%);
 }
 
 
