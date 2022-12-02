@@ -1,0 +1,313 @@
+html{
+
+    /*scrolling effekt når man trykker på links til annet sted på siden*/
+    scroll-behavior: smooth;
+
+}
+
+body{
+    
+    /* Fjerner margen*/
+    margin: 0px;
+
+    /* Styler bakgrunnen med et bilde
+    Bildet er tatt fra www.wallpaperflare.com */
+    background-image: url(../bilder/general_bilder/bakgrunn.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    
+    font-size: 20px;
+    line-height: 150%;
+    font-family: 'TrajanPro-Regular'
+}
+
+body > h1{
+    font-family: "TrojanPro-Bold";
+}
+
+button{ font-family: "TrojanPro-Bold";}
+
+/*gir links samme farge som resten av teksten*/
+a { color: inherit; }
+
+
+
+/* Styler links*/
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+
+/*Legger inn fonts*/
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url(TrajanPro-Regular.ttf);
+}
+@font-face {
+    font-family: TrajanPro-Bold;
+    src: url(TrajanPro-Bold.otf);
+}
+@font-face {
+    font-family: Evergreen;
+    src: url(Evergreen-yL2e.ttf);
+}
+
+
+.box, .boxinv{
+    overflow: hidden;
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+}
+
+.box{
+    background-color: #3a4928;
+    color: #e6deb9;
+}
+
+.box > h1{
+    font-style: oblique;
+    color: #e6deb9;
+}
+.box > h2{
+    font-style: italic;
+    color: #e6deb9;
+}
+
+.boxinv{
+    background-color: #e6deb9;
+}
+
+/*styler alle h1 og h2 i boxinv, også de som er inne i flere divs*/
+.boxinv > h1, 
+.boxinv > * > h1, 
+.boxinv > * > * > h1{
+    font-style: oblique;
+    color: #3a4928;
+}
+
+.boxinv > h2, 
+.boxinv > * > h2, 
+.boxinv > * > * > h2{
+    font-style: italic;
+    color: #3a4928;
+}
+
+#top{
+    margin: 0px;
+    text-align: center;
+    background-color: #3a4928;
+    overflow: auto;
+    color: #e6deb9;
+    font-family: 'TrajanPro-Bold';
+    width: 100%;
+}
+
+/* Plaserer linkene riktig*/
+#top infoTop{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;   
+}
+
+#top > a > img{
+    width: 55px; 
+    height: auto; 
+    float: left;
+}
+
+/* Endrer farge når du tar musen over*/
+#top infoTop:hover{
+    background-color: #e6deb9;
+    color: #3a4928;
+    cursor: pointer;
+}
+
+
+
+/*meny-ikon for navigasjonsmenyen*/
+#meny_bar{
+    position: fixed;
+    left: 23px;
+    top: 25px;
+
+    /*vises ikke før skjermen er liten nok (media query lengre ned)*/
+    display: none;
+    z-index: 1;
+
+    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+    -moz-animation: glow 0.7s ease-in-out infinite alternate;
+    animation: glow 0.7s ease-in-out infinite alternate;
+}
+
+#meny_bar > button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#meny_bar > button > img{
+    width: 45px;
+    height: auto;
+    
+}
+
+#meny_bar > button:hover{
+    cursor: pointer;
+}
+
+/*styler navigasjonsmenyen*/
+#nav_meny{
+    background-color: #3a4928;
+    color: #e6deb9;
+    text-align: center;
+    font-size: 25px;
+    line-height: 110%;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    padding-top: 0;
+    z-index: 2;
+    
+    /*endrer på height med menyknappen*/
+    width: 100%;
+    height: 0;
+    transition: 0.4s;
+
+}
+
+
+#nav_meny > div{
+    padding-top: 10px;
+    margin: 12px;
+}
+
+#nav_meny > div > a:hover{
+    color:#d4bf88;
+}
+
+
+/*styler menyen etter høyden på vinduet*/
+@media only screen and (max-height:700px){
+    #nav_meny{
+        font-size: 23px;
+    }
+
+    #nav_meny > div{
+        margin: 6px;
+    }
+
+}
+
+@media only screen and (max-height:600px){
+
+    #nav_meny > div{
+        margin: 5vh;
+        padding-top: 5px;
+    }
+
+}
+
+
+/*lager og styler en knapp for å lukke menyen*/
+.lukk > button{
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    padding: 4px 6px 4px 6px;
+    border: solid black 2px;
+    color: black;
+    font-weight: 1000;
+    font-size: 30px;
+    background: none;
+}
+
+.lukk > button:hover{
+    color: #d4bf88;
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*smoother blur-effekten når menyen åpnes*/
+#main{
+    transition: .4s filter linear;
+}
+
+
+
+
+
+/* En klasse for å lage mellomrom (så man ikke trenger x-antall <br> etter hverandre)*/
+.space{
+    margin: 20px;
+}
+
+@media only screen and (max-width:1510px){
+
+    body{
+        line-height: 135%;
+    }
+    
+    * > p{
+        font-size: 18px;
+    }
+    * > h1{
+        font-size: 34px;
+    }
+    * > h2{
+        font-size: 25px;
+    }
+    * > h3{
+        font-size: 20px;
+    }
+
+    #top{
+        display: none;
+    }
+
+    #meny_bar{
+        display: block;
+    }
+
+
+    .info{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 340px;
+        
+    }
+
+}
+
+@media only screen and (max-width:800px){
+
+    body{
+        line-height: 115%;
+    }
+
+    * > p{
+        font-size: 16px;
+        }
+    * > h1{
+        font-size: 27px;
+    }
+    * > h2{
+        font-size: 23px;
+    }
+    * > h3{
+        font-size: 18px;
+    }
+
+    .info{
+        height: 300px;
+        width: 360px;
+    }
+
+}
+
+
+      
