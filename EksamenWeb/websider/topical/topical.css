@@ -304,11 +304,11 @@ button{ font-family: "SpaceMono-Bold";}
 
 .h{
     grid-area: h;
-    height: 100%px;
+    height: 100%;
 }
 .v{
     grid-area: v;
-    height: 100%px;
+    height: 100%;
 }
 .boxinvis{
     overflow: hidden;
@@ -337,6 +337,16 @@ button{ font-family: "SpaceMono-Bold";}
     * > h3{
         font-size: 20px;
     }
+    .gridbox{
+        grid-template-rows:;
+        grid-template-areas:
+        "v"
+        "h";
+    }
+    .v,.h{
+        width: 100%;
+    }        
+
 
     #top{
         display: none;
@@ -369,5 +379,6 @@ button{ font-family: "SpaceMono-Bold";}
     * > h3{
         font-size: 18px;
     }
+
 
 }
