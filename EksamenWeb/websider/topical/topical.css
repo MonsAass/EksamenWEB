@@ -274,57 +274,6 @@ button{ font-family: "SpaceMono-Bold";}
     overflow: hidden;
 }
 
-
-@media only screen and (max-width:1510px){
-
-    body{
-        line-height: 135%;
-    }
-    
-    * > p{
-        font-size: 18px;
-    }
-    * > h1{
-        font-size: 34px;
-    }
-    * > h2{
-        font-size: 25px;
-    }
-    * > h3{
-        font-size: 20px;
-    }
-
-    #top{
-        display: none;
-    }
-
-    #meny_bar{
-        display: block;
-    }
-
-}
-
-@media only screen and (max-width:800px){
-
-    body{
-        line-height: 115%;
-    }
-
-    * > p{
-        font-size: 16px;
-        }
-    * > h1{
-        font-size: 27px;
-    }
-    * > h2{
-        font-size: 23px;
-    }
-    * > h3{
-        font-size: 18px;
-    }
-
-}
-
 .bilde > img{
     height: 300px;
 }
@@ -355,15 +304,70 @@ button{ font-family: "SpaceMono-Bold";}
 
 .h{
     grid-area: h;
-    height: 600px;
+    height: 100%px;
 }
 .v{
     grid-area: v;
-    height: 600px;
+    height: 100%px;
 }
 .boxinvis{
     overflow: hidden;
     width: 70%;
     padding: 0px;
    
+}
+
+
+
+@media only screen and (max-width:1510px){
+
+    body{
+        line-height: 135%;
+    }
+    
+    * > p{
+        font-size: 18px;
+    }
+    * > h1{
+        font-size: 34px;
+    }
+    * > h2{
+        font-size: 25px;
+    }
+    * > h3{
+        font-size: 20px;
+    }
+
+    #top{
+        display: none;
+    }
+
+    #meny_bar{
+        display: block;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:800px){
+
+    body{
+        line-height: 115%;
+    }
+
+    * > p{
+        font-size: 16px;
+        }
+    * > h1{
+        font-size: 27px;
+    }
+    * > h2{
+        font-size: 23px;
+    }
+    * > h3{
+        font-size: 18px;
+    }
+
 }
