@@ -314,15 +314,24 @@ button{ font-family: "SpaceMono-Bold";}
     "tekst1 bilde"
     "tekst2 bilde";
 }
-
-
+.tekst1{
+    grid-area: tekst1;
+}
+.tekst2{
+    grid-area: tekst2;
+}
+.bilde{
+    grid-area: bilde;
+}
 .gridbox{
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "v h";
+
 }
 
 .h{
@@ -334,10 +343,16 @@ button{ font-family: "SpaceMono-Bold";}
     height: 100%;
 }
 .boxinvis{
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     width: 70%;
     padding: 0px;
    
+}
+bildetekst{
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -360,7 +375,22 @@ button{ font-family: "SpaceMono-Bold";}
     * > h3{
         font-size: 20px;
     }
-
+    .gridbox{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "v"
+        "h";
+    }
+    .gridbunn{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "tekst1"
+    "tekst2"
+    "bilde";
+    }
+    .bilde{
+        margin-top: 0px;
+    }
     #top{
         display: none;
     }
@@ -392,5 +422,6 @@ button{ font-family: "SpaceMono-Bold";}
     * > h3{
         font-size: 18px;
     }
+
 
 }
