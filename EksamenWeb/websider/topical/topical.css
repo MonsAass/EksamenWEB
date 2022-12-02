@@ -95,6 +95,7 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 
+
 .box > h1, 
 .box > * > h1, 
 .box > * > * > h1{
@@ -336,4 +337,29 @@ button{ font-family: "SpaceMono-Bold";}
     grid-template-areas:
     "tekst bilde"
     "tekst bilde";
+}
+
+
+.gridbox{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "v h";
+}
+
+.h{
+    grid-area: h;
+    height: 600px;
+}
+.v{
+    grid-area: v;
+    height: 600px;
+}
+.boxinv{
+    overflow: hidden;
+    width: 70%;
+    padding: 0px;
+   
 }
