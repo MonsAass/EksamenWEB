@@ -45,6 +45,10 @@ a:active { text-decoration: underline; }
     font-family: CenturyGothic-Bold;
     src: url(GOTHICB.TTF);
 }
+@font-face {
+    font-family: SpaceMono;
+    src: url(SpaceMono-Regular.ttf);
+}
 
 /*knapp som tar deg til toppen av siden*/
 .tilTopp{
