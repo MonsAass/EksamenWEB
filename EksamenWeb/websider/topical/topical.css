@@ -95,6 +95,7 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 
+
 .box > h1, 
 .box > * > h1, 
 .box > * > * > h1{
@@ -275,25 +276,49 @@ button{ font-family: "SpaceMono-Bold";}
     margin-bottom: 50px;
 }
 
-/*knapp*/
-.knapp {
-    display:inline-block;
-    padding:2px 6px;
-    border:3px solid hsl(146, 25%, 9%);
-    margin:2px;
-    border-radius: 1px;
-    box-sizing: border-box;
-    background-color: hsl(146, 25%, 20%);
-    color: hsl(270, 65%, 57%);
-    text-align:center;
-    
-  }
-  .knapp:hover {
-    cursor:pointer;
-    background-color: hsl(270, 25%, 87%);
-    color: black;
-    text-decoration: none;
-  }
+.bilde > img{
+    height: 300px;
+}
+.bilde{
+    text-align: center;
+    margin-top: 30%;
+}
+.gridbunn{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:400px 350px;
+    grid-template-areas:
+    "tekst1 bilde"
+    "tekst2 bilde";
+}
+
+
+.gridbox{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "v h";
+}
+
+.h{
+    grid-area: h;
+    height: 100%px;
+}
+.v{
+    grid-area: v;
+    height: 100%px;
+}
+.boxinvis{
+    overflow: hidden;
+    width: 70%;
+    padding: 0px;
+   
+}
+
 
 
 @media only screen and (max-width:1510px){
@@ -323,6 +348,9 @@ button{ font-family: "SpaceMono-Bold";}
         display: block;
     }
 
+
+
+
 }
 
 @media only screen and (max-width:800px){
@@ -344,18 +372,4 @@ button{ font-family: "SpaceMono-Bold";}
         font-size: 18px;
     }
 
-}
-
-.bilde > img{
-    height: 300px;
-}
-.gridbunn{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows:200px 200px;
-    grid-template-areas:
-    "tekst bilde"
-    "tekst bilde";
 }
