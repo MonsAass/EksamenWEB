@@ -1,12 +1,12 @@
-html{
 
+/*generelle stylinger*/
+
+html{
     /*scrolling effekt når man trykker på links til annet sted på siden*/
     scroll-behavior: smooth;
-
 }
 
 body{
-    
     /* Fjerner margen*/
     margin: 0px;
 
@@ -17,23 +17,20 @@ body{
     background-attachment: fixed;
     background-size: cover; 
     
-    font-size: 20px;
+    font-size: 22px;
     line-height: 150%;
     font-family: 'CenturyGothic'
 }
 
-body > h1{
+/*gir alle h1 og button en annen font*/
+body > h1, body > * > h1, body > * > * > h1{
     font-family: "CenturyGothic-Bold";
 }
 
 button{ font-family: "CenturyGothic-Bold";}
 
-/*gir links samme farge som resten av teksten*/
+/*gir links samme farge som resten av teksten og styler hvordan de funker*/
 a { color: inherit; }
-
-
-
-/* Styler links*/
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -49,7 +46,197 @@ a:active { text-decoration: underline; }
     src: url(GOTHICB.TTF);
 }
 
+/*knapp som tar deg til toppen av siden*/
+.tilTopp{
+    position: fixed;
+    bottom: 15px;
+    right: 25px; 
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 
+    font-weight: 500;
+    border:#4B6B3C solid 2px;
+    background-color: #3a4928;
+}
+
+.tilTopp > button{
+    padding: 0;
+    border: none;
+    background: none;
+    
+    color: #e6deb9;
+    font-size: 50px;
+    
+    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+    -moz-animation: glow 0.7s ease-in-out infinite alternate;
+    animation: glow 0.7s ease-in-out infinite alternate; 
+}
+
+.tilTopp > button:hover { 
+    cursor: pointer;
+}
+
+/*animasjon for knappen, så den "gløder"*/
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px #e6deb9, 0 0 20px #3b2e1e, 0 0 40px #3b2e1e;
+    }
+    to {
+        text-shadow: 0px 0px 15px #3b2e1e, 0 0 30px #3b2e1e, 0 0 50px #3b2e1e;    }
+}
+
+
+
+/*styling for header og navigasjonsmeny*/
+
+
+/*lager en header*/
+#top{
+    margin: 0px;
+    text-align: center;
+    background-color: #3a4928;
+    overflow: auto;
+    color: #e6deb9;
+    font-family: 'CenturyGothic-Bold';
+    width: 100%;
+}
+
+/* Plaserer linkene riktig*/
+#top infoTop{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 27px;   
+}
+
+#top > a > img{
+    width: 55px; 
+    height: auto; 
+    float: left;
+}
+
+/* Endrer farge når du tar musen over*/
+#top infoTop:hover{
+    background-color: #e6deb9;
+    color: #3a4928;
+    cursor: pointer;
+}
+
+/*meny-ikon for navigasjonsmenyen*/
+#meny_bar{
+    position: fixed;
+    left: 23px;
+    top: 25px;
+
+    /*vises ikke før skjermen er liten nok (media query lengre ned)
+    z-index for å forsikre at den ikke ligger bak noe annet*/
+    display: none;
+    z-index: 1;
+}
+
+#meny_bar > button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#meny_bar > button > img{
+    width: 45px;
+    height: auto;
+}
+
+#meny_bar > button:hover{
+    cursor: pointer;
+}
+
+/*styler navigasjonsmenyen*/
+#nav_meny{
+    background-color: #3a4928;
+    color: #e6deb9;
+    text-align: center;
+    font-size: 27px;
+    line-height: 120%;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    padding-top: 0;
+    z-index: 2;
+    
+    /*endrer på height med menyknappen*/
+    width: 100%;
+    height: 0;
+    transition: 0.4s;
+
+}
+
+#nav_meny > div{
+    padding-top: 10px;
+    margin: 12px;
+}
+
+#nav_meny > div > a:hover{
+    color:#d4bf88;
+}
+
+
+/*styler menyen etter høyden på vinduet*/
+@media only screen and (max-height:700px){
+    #nav_meny{
+        font-size: 20px;
+    }
+
+    #nav_meny > div{
+        margin: 6px;
+    }
+}
+
+@media only screen and (max-height:600px){
+    #nav_meny > div{
+        margin: 4vh;
+        padding-top: 5px;
+    }
+}
+
+/*lager og styler en knapp for å lukke menyen*/
+.lukk > button{
+    position: absolute;
+    top: 24px;
+    left: 26px;
+    padding: 4px 6px 4px 6px;
+    border: solid black 2px;
+    color: black;
+    font-weight: 1000;
+    font-size: 32px;
+    background: none;
+}
+
+.lukk > button:hover{
+    color: #d4bf88;
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+/*styler hovedinnholdet*/
+
+
+/*smoother blur-effekten når menyen åpnes*/
+#main{
+    transition: .4s filter linear;
+}
+
+/* En klasse for å lage mellomrom (så man ikke trenger x-antall <br> etter hverandre)*/
+.space{
+    margin: 20px;
+}
+
+
+/*lager to boxer, den ene med inverte farger fra den første*/
 .box, .boxinv{
     overflow: hidden;
     width: 65%;
@@ -90,158 +277,11 @@ a:active { text-decoration: underline; }
     color: #3a4928;
 }
 
-#top{
-    margin: 0px;
-    text-align: center;
-    background-color: #3a4928;
-    overflow: auto;
-    color: #e6deb9;
-    font-family: 'CenturyGothic-Bold';
-    width: 100%;
-}
 
-/* Plaserer linkene riktig*/
-#top infoTop{
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 25px;   
-}
-
-#top > a > img{
-    width: 55px; 
-    height: auto; 
-    float: left;
-}
-
-/* Endrer farge når du tar musen over*/
-#top infoTop:hover{
-    background-color: #e6deb9;
-    color: #3a4928;
-    cursor: pointer;
-}
-
-
-
-/*meny-ikon for navigasjonsmenyen*/
-#meny_bar{
-    position: fixed;
-    left: 23px;
-    top: 25px;
-
-    /*vises ikke før skjermen er liten nok (media query lengre ned)*/
-    display: none;
-    z-index: 1;
-
-    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
-    -moz-animation: glow 0.7s ease-in-out infinite alternate;
-    animation: glow 0.7s ease-in-out infinite alternate;
-}
-
-#meny_bar > button{
-    padding: 0;
-    border: none;
-    background: none;
-}
-
-#meny_bar > button > img{
-    width: 45px;
-    height: auto;
-    
-}
-
-#meny_bar > button:hover{
-    cursor: pointer;
-}
-
-/*styler navigasjonsmenyen*/
-#nav_meny{
-    background-color: #3a4928;
-    color: #e6deb9;
-    text-align: center;
-    font-size: 25px;
-    line-height: 110%;
-    overflow: hidden;
-    position: fixed;
-    top:0;
-    padding-top: 0;
-    z-index: 2;
-    
-    /*endrer på height med menyknappen*/
-    width: 100%;
-    height: 0;
-    transition: 0.4s;
-
-}
-
-
-#nav_meny > div{
-    padding-top: 10px;
-    margin: 12px;
-}
-
-#nav_meny > div > a:hover{
-    color:#d4bf88;
-}
-
-
-/*styler menyen etter høyden på vinduet*/
-@media only screen and (max-height:700px){
-    #nav_meny{
-        font-size: 23px;
-    }
-
-    #nav_meny > div{
-        margin: 6px;
-    }
-
-}
-
-@media only screen and (max-height:600px){
-
-    #nav_meny > div{
-        margin: 5vh;
-        padding-top: 5px;
-    }
-
-}
-
-
-/*lager og styler en knapp for å lukke menyen*/
-.lukk > button{
-    position: absolute;
-    top: 26px;
-    left: 26px;
-    padding: 4px 6px 4px 6px;
-    border: solid black 2px;
-    color: black;
-    font-weight: 1000;
-    font-size: 30px;
-    background: none;
-}
-
-.lukk > button:hover{
-    color: #d4bf88;
-    background-color: black;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/*smoother blur-effekten når menyen åpnes*/
-#main{
-    transition: .4s filter linear;
-}
-
-
-
-
-
-/* En klasse for å lage mellomrom (så man ikke trenger x-antall <br> etter hverandre)*/
-.space{
-    margin: 20px;
-}
 
 /* Styler footer*/
+
+
 #footer {
     padding: 35px;
     margin: 0px;
@@ -259,7 +299,6 @@ a:active { text-decoration: underline; }
 }
 
 /* Styler infoblokkene i footeren*/
-
 .info{
     display: inline-block;
     width: 420px;
@@ -289,54 +328,9 @@ hr.bunn {
     margin: 15px;
 }
 
-.tilTopp{
-     
-    
-    position: fixed;
-    bottom: 15px;
-    right: 25px; 
-    
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-
-    font-weight: 500;
-    border:#4B6B3C solid 2px;
-    background-color: #3a4928;
 
 
-
-}
-
-.tilTopp > button{
-
-    padding: 0;
-    border: none;
-    background: none;
-    
-    color: #e6deb9;
-    font-size: 50px;
-    
-    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
-    -moz-animation: glow 0.7s ease-in-out infinite alternate;
-    animation: glow 0.7s ease-in-out infinite alternate;
-    
-}
-
-.tilTopp > button:hover { 
-    cursor: pointer;
-}
-
-
-/*haha*/
-@keyframes glow {
-    from {
-        text-shadow: 0px 0px 10px #e6deb9, 0 0 20px #3b2e1e, 0 0 40px #3b2e1e;
-    }
-    to {
-        text-shadow: 0px 0px 15px #3b2e1e, 0 0 30px #3b2e1e, 0 0 50px #3b2e1e;    }
-  }
-
+/*media query for skalering av siden*/
 
 @media only screen and (max-width:1510px){
 
@@ -345,18 +339,20 @@ hr.bunn {
     }
     
     * > p{
-        font-size: 18px;
-    }
-    * > h1{
-        font-size: 34px;
-    }
-    * > h2{
-        font-size: 25px;
-    }
-    * > h3{
         font-size: 20px;
     }
+    * > h1{
+        font-size: 36px;
+    }
+    * > h2{
+        font-size: 27px;
+    }
+    * > h3{
+        font-size: 22px;
+    }
 
+
+    /*skjuler headeren og viser meny-knappen*/
     #top{
         display: none;
     }
@@ -365,34 +361,33 @@ hr.bunn {
         display: block;
     }
 
-
+    /*viser infoboskene i footeren over hverandre*/
     .info{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 340px;
-        
+        height: 340px; 
     }
-
 }
 
 @media only screen and (max-width:800px){
 
+    /*skalerer tekst og infoboksene i footeren enda mere ned for enda mindre skjermer*/
     body{
         line-height: 115%;
     }
 
     * > p{
-        font-size: 16px;
+        font-size: 18px;
         }
     * > h1{
-        font-size: 27px;
+        font-size: 29px;
     }
     * > h2{
-        font-size: 23px;
+        font-size: 25px;
     }
     * > h3{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .info{
