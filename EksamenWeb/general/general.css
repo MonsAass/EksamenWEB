@@ -19,14 +19,14 @@ body{
     
     font-size: 20px;
     line-height: 150%;
-    font-family: 'TrajanPro-Regular'
+    font-family: 'CenturyGothic'
 }
 
 body > h1{
-    font-family: "TrojanPro-Bold";
+    font-family: "CenturyGothic-Bold";
 }
 
-button{ font-family: "TrojanPro-Bold";}
+button{ font-family: "CenturyGothic-Bold";}
 
 /*gir links samme farge som resten av teksten*/
 a { color: inherit; }
@@ -41,16 +41,12 @@ a:active { text-decoration: underline; }
 
 /*Legger inn fonts*/
 @font-face {
-    font-family: TrajanPro-Regular;
-    src: url(TrajanPro-Regular.ttf);
+    font-family: CenturyGothic;
+    src: url(Century\ Gothic.ttf);
 }
 @font-face {
-    font-family: TrajanPro-Bold;
-    src: url(TrajanPro-Bold.otf);
-}
-@font-face {
-    font-family: Evergreen;
-    src: url(Evergreen-yL2e.ttf);
+    font-family: CenturyGothic-Bold;
+    src: url(GOTHICB.TTF);
 }
 
 
@@ -100,7 +96,7 @@ a:active { text-decoration: underline; }
     background-color: #3a4928;
     overflow: auto;
     color: #e6deb9;
-    font-family: 'TrajanPro-Bold';
+    font-family: 'CenturyGothic-Bold';
     width: 100%;
 }
 
