@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -156,7 +156,8 @@
             <div class="grid_1">
                 <h2>Kontrast verktøy</h2>
                     <p>
-                        Wave har et inebyd kontrastvekrtøy som viser hvor kontrastfeilen er og du har mulighet til å endre fargen på stedet så du kan finne en løsning med en gang.
+                        Wave har et inebyd kontrastvekrtøy som viser hvor kontrastfeilen er 
+                        og du har mulighet til å endre fargen på stedet så du kan finne en løsning med en gang.
                         selv med dette verktøyet klarte vi ikke lokalisere de 7 feilene som er igjen. 
                     </p>
                     
@@ -174,33 +175,51 @@
 
     <div class="space"></div>
 
-    <div class="boxinv" tabindex="0">
-        
-        <h2>I praksis</h2>
+    <div class="boxinv">
+
+        <div>
+            <h2>Screen reader</h2>
+
+            <h3>Tabindex</h3>
             <p>
-                For å få testet siden ordentlig fikk vi hjelp av frivelige. De ble spurt om det var noe mangler eller noe forbedringer de hadde ønsket seg. 
-                Som en tilbakemelding fikk vi at fonten var vanskelig å lese og med tanke på at fonten burde være dysleksivennlig så valgte vi å finne noe som einet seg bedre.
+                Før vi kunne sjekke siden vår med en screen reader, måtte vi sørge for at alt var mulig å nå uten en datamus.
+                Vi ga alle elementer en tab index sånn at det skulle være mulig og navigere siden ved bruk av tab og piltastene.
+                Da er det mulig å navigere siden uten å kunne se skjermen.
+                Da trengs det bare en screen reader for å få lest opp innholdet.
             </p>
+        </div>
+        
+        <div>
+            <p>
+                Sliter man med synet, eller ikke har noe syn i det heletatt, 
+                kan en screen reader extention på nettleseren din hjelpe deg å få med innholdet på nettsider.
+                Nå som man kan navigere seg rundt på siden ved bruk av tab-knappen, testet vi med Google Chrome sin screen reader.
+                Vi fant ut at vi trengte å bryte opp teksten med mer punktum, ettersom opplesningen var litt hakkete. 
+                Vi la derfor inn punktum i alle alt-ene til bildene.
+                Da ble teksten lest opp litt mer naturlig og det ble enklere å følge med.
+            </p>
+
+            <div class="scr_read">
+                <img alt="bilde av google screen reader" src="../../bilder/brukervenlighet/google_screenreader.png">
+            </div>
+        </div>
+
+
     </div>
 
     <div class="space"></div>
 
-    <div class="boxinv">
-
-        <h2>Screen reader</h2>
-
+    <div class="boxinv" tabindex="0">
+        
+        <h2>I praksis</h2>
             <p>
-                Når vi testet siden med en screan reader fant vi ut at vi trengte å bryte opp teksten med mer punktum. Vi la derfor inn punktum i alle alter til bilder.
-                Da ble teksten lest opp litt mer naturlig og det ble enklere å følge med.
+                For å få testet siden ordentlig fikk vi hjelp av frivelige. 
+                De ble spurt om det var noe mangler eller noe forbedringer de hadde ønsket seg. 
+                Som en tilbakemelding fikk vi at fonten var vanskelig å lese, 
+                og med tanke på at fonten burde være dysleksivennlig så valgte vi å finne noe som einet seg bedre.
             </p>
-            <h3>Tabindex</h3>
-                <p>
-                    Vi ga alle elementer en tab index sånn at det skulle være mulig og navigere siden uten bruk av mus.
-                    Dette gjør det også sånn at det er mulig å navigere siden uten å kunne se skjermen ved hjelp av en screen reader.
-                    Noe som er gunstig om du ikke kan se.
-                </p>
     </div>
-    
+
 
 
     
