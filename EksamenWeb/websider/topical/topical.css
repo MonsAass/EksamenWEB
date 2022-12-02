@@ -19,14 +19,14 @@ body{
     
     font-size: 20px;
     line-height: 150%;
-    font-family: 'TrajanPro-Regular'
+    font-family: 'SpaceMono'
 }
 
 body > h1{
-    font-family: "TrojanPro-Bold";
+    font-family: "SpaceMono-Bold";
 }
 
-button{ font-family: "TrojanPro-Bold";}
+button{ font-family: "SpaceMono-Bold";}
 
 /*gir links samme farge som resten av teksten*/
 a { color: inherit; }
@@ -41,16 +41,20 @@ a:active { text-decoration: underline; }
 
 /*Legger inn fonts*/
 @font-face {
-    font-family: TrajanPro-Regular;
-    src: url(TrajanPro-Regular.ttf);
+    font-family: CenturyGothic;
+    src: url(Century\ Gothic.ttf);
 }
 @font-face {
-    font-family: TrajanPro-Bold;
-    src: url(TrajanPro-Bold.otf);
+    font-family: CenturyGothic-Bold;
+    src: url(GOTHICB.TTF);
 }
 @font-face {
-    font-family: Evergreen;
-    src: url(Evergreen-yL2e.ttf);
+    font-family: SpaceMono;
+    src: url(SpaceMono-Regular.ttf);
+}
+@font-face {
+    font-family: SpaceMono-Bold;
+    src: url(SpaceMono-Bold.ttf);
 }
 
 
