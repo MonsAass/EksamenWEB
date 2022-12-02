@@ -289,5 +289,16 @@ button{ font-family: "SpaceMono-Bold";}
 
 }
 
-
-      
+.bilde > img{
+    height: 300px;
+}
+.gridbunn{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "tekst bilde"
+    "tekst bilde";
+}
