@@ -297,7 +297,7 @@ button{ font-family: "SpaceMono-Bold";}
     margin-right: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows:200px 200px;
     grid-template-areas:
     "tekst bilde"
     "tekst bilde";
