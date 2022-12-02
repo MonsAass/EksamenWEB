@@ -140,12 +140,6 @@
                 <label for="name">Ditt navn</label>
                 <input type="text" id="name" name="name" required>                
             </div>
-
-            <div class="FormElem">
-                <label for="epost">Din epost</label>
-                <input type="text" id="epost" name="epost">
-            </div>
-
         
             <div class="FormElem">
                 <label for="telefon">Din telefon</label>
@@ -159,13 +153,18 @@
 
             <div class="FormElem">
                 <label for="dato">Når?</label>
-                <input type="date" id="dato" name="dato" required>
+                <input type="date" id="dato" name="dato" required>    
             </div> 
+
+            <div class="FormElem">
+                <label for="tid">Klokka?</label>
+                <input type="time" id="tid" name="tid" min="12:00" max="21:00" required>
+            </div>
+
             <div class="FormElem">
                 <input type="submit" value="Reserver">
 
             </div>
-
             <!--script til når du submitter form-->
             <script>
                 function svar(){
