@@ -12,8 +12,13 @@
 .grid_1 {
     grid-area: grid_1;
     text-align: left;
-    font-size: 20px;
     }
+.grid_1 > img{
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
+    }
+
 
 .grid_2{
     grid-area: grid_2;
@@ -27,11 +32,7 @@
     height: 500px;
     object-fit: cover;
     }
-.grid_1 > img{
-    height: 100px;
-    object-fit: cover;
-    text-align: center;
-    }
+
 
 .scr_read {
     text-align: center;

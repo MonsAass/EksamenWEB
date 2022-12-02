@@ -4,12 +4,6 @@
 }
 
 /* Styler hr, h1 og allergisymbolene i menyen*/
-
-.column > img {
-    width: 20px;
-    height: auto;
-}
-
 .meny > hr{
     border: 1px solid #3a4928;
     
@@ -20,9 +14,14 @@
     
 }
 
+
 /* Setter symbolene for allergier fint ved siden av hverandre i menyen*/
 .column {
     float: none;
+}
+.column > img {
+    width: 20px;
+    height: auto;
 }
 .row::after {
     content: "";
@@ -32,17 +31,7 @@
 
 
 /* Allergikart */
-
-.allergener{ 
-    width: 60%; 
-}
-
-.allergener > h2{ 
-    margin-top: 0; 
-}
-
 /*lager en flexbox*/
-
 .allergikart{
     padding-left: 3px;
     padding-right: 3px;
@@ -67,6 +56,13 @@
     height: auto;
 
 }
+.allergener{ 
+    width: 60%; 
+}
+.allergener > h2{ 
+    margin-top: 0; 
+}
+
 
 
 /*skalerer ned med skjermstørrelse*/
