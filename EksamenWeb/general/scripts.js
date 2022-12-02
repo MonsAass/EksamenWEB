@@ -15,7 +15,7 @@
         }
 
         document.getElementById("main").style.filter="blur(2px)";
-        document.getElementById("footer").style.filter="blur(2px)";
+        
         document.body.style.overflow="hidden";
 
 
@@ -29,6 +29,7 @@
             valget[i].tabIndex = 0; 
         }
 
+        document.getElementById("footer").style.filter="blur(2px)";
     }
 
     /*lukker menyen, fjerner blur fra bakgrunnen 
@@ -38,7 +39,7 @@
         document.getElementById("nav_meny").style.height= "0";
 
         document.getElementById("main").style.filter="blur(0)";
-        document.getElementById("footer").style.filter="blur(0px)";
+        
         document.body.style.overflow="visible";
 
 
@@ -52,7 +53,7 @@
             valget[i].tabIndex = -1; 
         }
 
-
+        document.getElementById("footer").style.filter="blur(0px)";
     }
 
     /*tar brukeren opp til toppen av siden*/

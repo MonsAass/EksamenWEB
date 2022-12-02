@@ -18,6 +18,12 @@ body{
     font-family: 'SpaceMono'
 }
 
+a { color: inherit; }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+
 body > h1{
     font-family: "SpaceMono-Bold";
 }
@@ -33,45 +39,73 @@ button{ font-family: "SpaceMono-Bold";}
     src: url(../../general/SpaceMono-Bold.ttf);
 }
 
+/*knapp som tar deg til toppen av siden*/
+.tilTopp{
+    position: fixed;
+    bottom: 15px;
+    right: 25px; 
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 
-.box, .boxinv{
+    font-weight: 500;
+    border: hsl(146, 25%, 9%) solid 2px;
+    background-color: hsl(146, 25%, 20%);
+}
+
+.tilTopp > button{
+    padding: 0;
+    border: none;
+    background: none;
+    
+    color: hsl(270, 65%, 57%);
+    font-size: 50px;
+    
+    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+    -moz-animation: glow 0.7s ease-in-out infinite alternate;
+    animation: glow 0.7s ease-in-out infinite alternate; 
+}
+
+.tilTopp > button:hover { 
+    cursor: pointer;
+}
+
+/*animasjon for knappen, så den "gløder"*/
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px hsl(270, 65%, 57%), 0 0 20px hsl(146, 25%, 9%), 0 0 40px hsl(146, 25%, 9%);
+    }
+    to {
+        text-shadow: 0px 0px 15px hsl(270, 25%, 87%), 0 0 30px hsl(146, 25%, 9%), 0 0 50px hsl(146, 25%, 9%);    }
+}
+
+
+.box{
     overflow: hidden;
     width: 65%;
     margin: auto;
     padding: 10px;
-}
-
-.box{
     background-color: hsl(146, 25%, 20%);
     color: hsl(270, 25%, 87%);
+
+    /*runder hjørnene*/
+    border-radius: 25px;
+    padding: 20px;
 }
 
-.box > h1{
+
+.box > h1, 
+.box > * > h1, 
+.box > * > * > h1{
     font-style: oblique;
     color: hsl(270, 65%, 57%);
 }
-.box > h2{
+.box > h2, 
+.box > * > h2, 
+.box > * > * > h2{
     font-style: italic;
     color: hsl(270, 65%, 57%);
-}
-
-.boxinv{
-    background-color: #e6deb9;
-}
-
-/*styler alle h1 og h2 i boxinv, også de som er inne i flere divs*/
-.boxinv > h1, 
-.boxinv > * > h1, 
-.boxinv > * > * > h1{
-    font-style: oblique;
-    color: #3a4928;
-}
-
-.boxinv > h2, 
-.boxinv > * > h2, 
-.boxinv > * > * > h2{
-    font-style: italic;
-    color: #3a4928;
 }
 
 #top{
@@ -84,6 +118,7 @@ button{ font-family: "SpaceMono-Bold";}
     width: 100%;
 }
 
+
 /* Plaserer linkene riktig*/
 #top infoTop{
     float: left;
@@ -92,10 +127,12 @@ button{ font-family: "SpaceMono-Bold";}
     font-size: 25px;   
 }
 
-#top  > img{
+#top > img{
     width: 55px; 
     height: auto; 
     float: left;
+    background-color: hsl(270, 65%, 57%);
+    padding-bottom: 3px;
 }
 
 /* Endrer farge når du tar musen over*/
@@ -116,10 +153,6 @@ button{ font-family: "SpaceMono-Bold";}
     /*vises ikke før skjermen er liten nok (media query lengre ned)*/
     display: none;
     z-index: 1;
-
-    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
-    -moz-animation: glow 0.7s ease-in-out infinite alternate;
-    animation: glow 0.7s ease-in-out infinite alternate;
 }
 
 #meny_bar > button{
@@ -141,7 +174,7 @@ button{ font-family: "SpaceMono-Bold";}
 /*styler navigasjonsmenyen*/
 #nav_meny{
     background-color: hsl(146, 25%, 20%);
-    color: hsl(270, 65%, 57%);
+    color:hsl(270, 65%, 57%);
     text-align: center;
     font-size: 25px;
     line-height: 110%;
@@ -158,10 +191,9 @@ button{ font-family: "SpaceMono-Bold";}
 
 }
 
-
 #nav_meny > div{
-    padding-top: 10px;
-    margin: 12px;
+    padding-top: 5px;
+    margin: 4vh;
 }
 
 #nav_meny > div > a:hover{
@@ -176,7 +208,7 @@ button{ font-family: "SpaceMono-Bold";}
     }
 
     #nav_meny > div{
-        margin: 6px;
+        margin: 4vh;
     }
 
 }
@@ -184,8 +216,8 @@ button{ font-family: "SpaceMono-Bold";}
 @media only screen and (max-height:600px){
 
     #nav_meny > div{
-        margin: 5vh;
-        padding-top: 5px;
+        margin: 7vh;
+        padding-top: 6px;
     }
 
 }
@@ -205,7 +237,7 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 .lukk > button:hover{
-    color: #d4bf88;
+    color: hsl(270, 65%, 57%);
     background-color: black;
     cursor: pointer;
     text-decoration: none;
@@ -217,13 +249,30 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 
-
-
-
 /* En klasse for å lage mellomrom (så man ikke trenger x-antall <br> etter hverandre)*/
 .space{
     margin: 20px;
 }
+
+
+#footer{
+    width: 100vw;
+    background: hsl(270, 65%, 57%);
+    transition: .4s filter linear;
+    margin-top: 10px;
+    padding: 10px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+#footer > div{
+    width: 40vw;
+
+    overflow: hidden;
+}
+
 
 @media only screen and (max-width:1510px){
 
@@ -252,15 +301,6 @@ button{ font-family: "SpaceMono-Bold";}
         display: block;
     }
 
-
-    .info{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 340px;
-        
-    }
-
 }
 
 @media only screen and (max-width:800px){
@@ -280,11 +320,6 @@ button{ font-family: "SpaceMono-Bold";}
     }
     * > h3{
         font-size: 18px;
-    }
-
-    .info{
-        height: 300px;
-        width: 360px;
     }
 
 }
