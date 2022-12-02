@@ -10,12 +10,8 @@ body{
     /* Fjerner margen*/
     margin: 0px;
 
-    /* Styler bakgrunnen med et bilde
-    Bildet er tatt fra www.wallpaperflare.com */
-    background-image: url(../bilder/general_bilder/bakgrunn.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
+    background-color: hsl(270, 25%, 87%);
+    transition: background-color 1s linear;
     
     font-size: 20px;
     line-height: 150%;
@@ -28,7 +24,6 @@ body > h1{
 
 button{ font-family: "SpaceMono-Bold";}
 /*Legger inn fonts*/
-
 @font-face {
     font-family: SpaceMono;
     src: url(../../general/SpaceMono-Regular.ttf);
@@ -47,17 +42,17 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 .box{
-    background-color: #ffffff;
-    color: #040410;
+    background-color: hsl(146, 25%, 20%);
+    color: hsl(270, 25%, 87%);
 }
 
 .box > h1{
     font-style: oblique;
-    color: #010205;
+    color: hsl(270, 65%, 57%);
 }
 .box > h2{
     font-style: italic;
-    color: #030409;
+    color: hsl(270, 65%, 57%);
 }
 
 .boxinv{
@@ -82,10 +77,10 @@ button{ font-family: "SpaceMono-Bold";}
 #top{
     margin: 0px;
     text-align: center;
-    background-color: #3a4928;
+    background-color: hsl(146, 25%, 20%);
     overflow: auto;
-    color: #e6deb9;
-    font-family: 'TrajanPro-Bold';
+    color: hsl(270, 65%, 57%);
+    font-family: 'SpaceMono-Bold';
     width: 100%;
 }
 
@@ -97,7 +92,7 @@ button{ font-family: "SpaceMono-Bold";}
     font-size: 25px;   
 }
 
-#top > a > img{
+#top  > img{
     width: 55px; 
     height: auto; 
     float: left;
@@ -105,8 +100,8 @@ button{ font-family: "SpaceMono-Bold";}
 
 /* Endrer farge når du tar musen over*/
 #top infoTop:hover{
-    background-color: #e6deb9;
-    color: #3a4928;
+    background-color: hsl(270, 65%, 57%);
+    color: hsl(146, 25%, 9%);
     cursor: pointer;
 }
 
@@ -145,8 +140,8 @@ button{ font-family: "SpaceMono-Bold";}
 
 /*styler navigasjonsmenyen*/
 #nav_meny{
-    background-color: #3a4928;
-    color: #e6deb9;
+    background-color: hsl(146, 25%, 20%);
+    color: hsl(270, 65%, 57%);
     text-align: center;
     font-size: 25px;
     line-height: 110%;
@@ -170,7 +165,7 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 #nav_meny > div > a:hover{
-    color:#d4bf88;
+    color: hsl(270, 25%, 87%);
 }
 
 

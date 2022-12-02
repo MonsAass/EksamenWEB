@@ -39,7 +39,7 @@ a:active { text-decoration: underline; }
 /*Legger inn fonts*/
 @font-face {
     font-family: CenturyGothic;
-    src: url(Century\ Gothic.ttf);
+    src: url(CenturyGothic.ttf);
 }
 @font-face {
     font-family: CenturyGothic-Bold;
