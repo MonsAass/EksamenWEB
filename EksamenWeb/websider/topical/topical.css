@@ -375,6 +375,9 @@ bildetekst{
     * > h3{
         font-size: 20px;
     }
+    * > li{
+        font-size: 18px;
+    }
     .gridbox{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -421,6 +424,10 @@ bildetekst{
     }
     * > h3{
         font-size: 18px;
+    }
+
+    * > li{
+        font-size: 16px;
     }
 
 
