@@ -52,6 +52,7 @@
             valget[i].tabIndex = -1; 
         }
 
+
     }
 
     /*tar brukeren opp til toppen av siden*/
