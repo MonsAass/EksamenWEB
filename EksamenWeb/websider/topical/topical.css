@@ -42,7 +42,7 @@ a:active { text-decoration: underline; }
 /*Legger inn fonts*/
 @font-face {
     font-family: CenturyGothic;
-    src: url(Century\ Gothic.ttf);
+    src: url(CenturyGothic.ttf);
 }
 @font-face {
     font-family: CenturyGothic-Bold;
@@ -104,7 +104,7 @@ a:active { text-decoration: underline; }
     background-color: #3a4928;
     overflow: auto;
     color: #e6deb9;
-    font-family: 'TrajanPro-Bold';
+    font-family: 'SpaceMono';
     width: 100%;
 }
 
