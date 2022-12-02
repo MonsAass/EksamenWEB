@@ -80,12 +80,33 @@ a:active { text-decoration: underline; }
 
 }
 
+/*styler alle h1 og h2 i boxinv, også de som er inne i flere divs*/
 .boxinv > h1{
     font-style: oblique;
     color: #3a4928;
 }
 
 .boxinv > h2{
+    font-style: italic;
+    color: #3a4928;
+}
+
+.boxinv > * > h1{
+    font-style: oblique;
+    color: #3a4928;
+}
+
+.boxinv > * > h2{
+    font-style: italic;
+    color: #3a4928;
+}
+
+.boxinv > * > * > h1{
+    font-style: oblique;
+    color: #3a4928;
+}
+
+.boxinv > * > * > h2{
     font-style: italic;
     color: #3a4928;
 }
