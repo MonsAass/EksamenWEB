@@ -293,6 +293,15 @@ button{ font-family: "SpaceMono-Bold";}
     "tekst1 bilde"
     "tekst2 bilde";
 }
+.tekst1{
+    grid-area: tekst1;
+}
+.tekst2{
+    grid-area: tekst2;
+}
+.bilde{
+    grid-area: bilde;
+}
 .gridbox{
     margin-left: auto;
     margin-right: auto;
