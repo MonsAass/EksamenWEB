@@ -276,6 +276,27 @@ button{ font-family: "SpaceMono-Bold";}
     margin-bottom: 50px;
 }
 
+/*knapp*/
+.knapp {
+    display:inline-block;
+    padding:2px 6px;
+    border:3px solid hsl(146, 25%, 9%);
+    margin:2px;
+    border-radius: 1px;
+    box-sizing: border-box;
+    background-color: hsl(146, 25%, 20%);
+    color: hsl(270, 65%, 57%);
+    text-align:center;
+    
+  }
+  .knapp:hover {
+    cursor:pointer;
+    background-color: hsl(270, 25%, 87%);
+    color: black;
+    text-decoration: none;
+  }
+
+
 .bilde > img{
     height: 300px;
 }
@@ -306,11 +327,11 @@ button{ font-family: "SpaceMono-Bold";}
 
 .h{
     grid-area: h;
-    height: 100%px;
+    height: 100%;
 }
 .v{
     grid-area: v;
-    height: 100%px;
+    height: 100%;
 }
 .boxinvis{
     overflow: hidden;
