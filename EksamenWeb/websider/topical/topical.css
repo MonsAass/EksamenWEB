@@ -40,21 +40,14 @@ a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
 
 /*Legger inn fonts*/
-@font-face {
-    font-family: CenturyGothic;
-    src: url(Century\ Gothic.ttf);
-}
-@font-face {
-    font-family: CenturyGothic-Bold;
-    src: url(GOTHICB.TTF);
-}
+
 @font-face {
     font-family: SpaceMono;
-    src: url(SpaceMono-Regular.ttf);
+    src: url(../../general/SpaceMono-Regular.ttf);
 }
 @font-face {
     font-family: SpaceMono-Bold;
-    src: url(SpaceMono-Bold.ttf);
+    src: url(../../general/SpaceMono-Bold.ttf);
 }
 
 
