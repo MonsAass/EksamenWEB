@@ -396,7 +396,9 @@ hr.bunn {
 
     .info{
         height: 300px;
-        width: 360px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
