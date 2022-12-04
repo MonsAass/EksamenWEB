@@ -81,6 +81,7 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 
+/*Styler de grønne boksene*/
 .box{
     overflow: hidden;
     width: 65%;
@@ -95,13 +96,15 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 
-
+/*Styler fonten og fargen til alle h1*/
 .box > h1, 
 .box > * > h1, 
 .box > * > * > h1{
     font-style: oblique;
     color: hsl(270, 65%, 57%);
 }
+
+/*Styler fonten og fargen til alle h2*/
 .box > h2, 
 .box > * > h2, 
 .box > * > * > h2{
@@ -109,6 +112,7 @@ button{ font-family: "SpaceMono-Bold";}
     color: hsl(270, 65%, 57%);
 }
 
+/*styler linkene på toppen av siden*/
 #top{
     margin: 0px;
     text-align: center;
@@ -255,7 +259,7 @@ button{ font-family: "SpaceMono-Bold";}
     margin: 20px;
 }
 
-
+/*Styler footer*/
 #footer{
     width: 100%;
     background: hsl(270, 65%, 57%);
@@ -297,13 +301,7 @@ button{ font-family: "SpaceMono-Bold";}
   }
 
 
-.bilde > img{
-    height: 300px;
-}
-.bilde{
-    text-align: center;
-    margin-top: 30%;
-}
+/*Lager en grid*/
 .gridbunn{
     margin-left: auto;
     margin-right: auto;
@@ -314,17 +312,29 @@ button{ font-family: "SpaceMono-Bold";}
     "tekst1 bilde"
     "tekst2 bilde";
 }
+
+/*klasse til griden: gridbunn*/
 .tekst1{
     grid-area: tekst1;
     height: 100%;
 }
+/*klasse til griden: gridbunn*/
 .tekst2{
     grid-area: tekst2;
     height: 100%;
 }
+/*klasse til griden: gridbunn*/
 .bilde{
     grid-area: bilde;
+    text-align: center;
+    margin-top: 30%;
 }
+.bilde > img{
+    height: 300px;
+}
+
+
+/*Lager en grid*/
 .gridbox{
     margin-left: auto;
     margin-right: auto;
@@ -335,15 +345,18 @@ button{ font-family: "SpaceMono-Bold";}
     "v h";
 
 }
-
+/*klasse til griden: gridbox*/
 .h{
     grid-area: h;
     height: 100%;
 }
+/*klasse til griden: gridbox*/
 .v{
     grid-area: v;
     height: 100%;
 }
+
+/*en usynlig box for å style posisjoner*/
 .boxinvis{
     margin-left: auto;
     margin-right: auto;
@@ -352,6 +365,8 @@ button{ font-family: "SpaceMono-Bold";}
     padding: 0px;
    
 }
+
+/*Styler bildeteksten*/
 bildetekst{
     font-size: 15px;
     margin-bottom: 10px;
