@@ -402,6 +402,11 @@ hr.bunn {
     }
 
 }
-
+@media only screen and (max-width:500px){
+    .info{
+        height: 300px;
+        width: 90%;
+    }
+}
 
       
