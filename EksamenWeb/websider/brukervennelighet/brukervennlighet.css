@@ -68,4 +68,7 @@
         padding-right: 5px;
         
     }
+    .grid_2 > img{
+        height: 400px;
+    }
 }
