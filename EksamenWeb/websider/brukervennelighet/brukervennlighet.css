@@ -68,4 +68,10 @@
         padding-right: 5px;
         
     }
+
+    .scr_read > img{
+        
+        width: 70%;
+    }
+
 }
