@@ -169,6 +169,8 @@ textarea{
     .tekst{
         margin-bottom: 0;
         padding-bottom: 0;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
     .bilde{
