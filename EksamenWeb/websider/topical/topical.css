@@ -1,3 +1,7 @@
+
+/*kopiert mye av css-en fra "general.css"
+beholder mye av kode, men endrer på småting som f.eks farge*/
+
 html{
 
     /*scrolling effekt når man trykker på links til annet sted på siden*/
@@ -59,7 +63,7 @@ button{ font-family: "SpaceMono-Bold";}
     border: none;
     background: none;
     
-    color: hsl(270, 65%, 57%);
+    color: hsl(270, 65%, 77%);
     font-size: 50px;
     
     -webkit-animation: glow 0.7s ease-in-out infinite alternate;
@@ -74,7 +78,7 @@ button{ font-family: "SpaceMono-Bold";}
 /*animasjon for knappen, så den "gløder"*/
 @keyframes glow {
     from {
-        text-shadow: 0px 0px 10px hsl(270, 65%, 57%), 0 0 20px hsl(146, 25%, 9%), 0 0 40px hsl(146, 25%, 9%);
+        text-shadow: 0px 0px 10px hsl(270, 65%, 77%), 0 0 20px hsl(146, 25%, 9%), 0 0 40px hsl(146, 25%, 9%);
     }
     to {
         text-shadow: 0px 0px 15px hsl(270, 25%, 87%), 0 0 30px hsl(146, 25%, 9%), 0 0 50px hsl(146, 25%, 9%);    }
@@ -101,7 +105,7 @@ button{ font-family: "SpaceMono-Bold";}
 .box > * > h1, 
 .box > * > * > h1{
     font-style: oblique;
-    color: hsl(270, 65%, 57%);
+    color: hsl(270, 65%, 77%);
 }
 
 /*Styler fonten og fargen til alle h2*/
@@ -109,7 +113,7 @@ button{ font-family: "SpaceMono-Bold";}
 .box > * > h2, 
 .box > * > * > h2{
     font-style: italic;
-    color: hsl(270, 65%, 57%);
+    color: hsl(270, 65%, 77%);
 }
 
 /*styler linkene på toppen av siden*/
@@ -118,7 +122,7 @@ button{ font-family: "SpaceMono-Bold";}
     text-align: center;
     background-color: hsl(146, 25%, 20%);
     overflow: auto;
-    color: hsl(270, 65%, 57%);
+    color: hsl(270, 65%, 77%);
     font-family: 'SpaceMono-Bold';
     width: 100%;
 }
@@ -136,13 +140,13 @@ button{ font-family: "SpaceMono-Bold";}
     width: 55px; 
     height: auto; 
     float: left;
-    background-color: hsl(270, 65%, 57%);
+    background-color: hsl(270, 65%, 77%);
     padding-bottom: 3px;
 }
 
 /* Endrer farge når du tar musen over*/
 #top infoTop:hover{
-    background-color: hsl(270, 65%, 57%);
+    background-color: hsl(270, 65%, 77%);
     color: hsl(146, 25%, 9%);
     cursor: pointer;
 }
@@ -179,7 +183,7 @@ button{ font-family: "SpaceMono-Bold";}
 /*styler navigasjonsmenyen*/
 #nav_meny{
     background-color: hsl(146, 25%, 20%);
-    color:hsl(270, 65%, 57%);
+    color:hsl(270, 65%, 77%);
     text-align: center;
     font-size: 25px;
     line-height: 110%;
@@ -242,7 +246,7 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 .lukk > button:hover{
-    color: hsl(270, 65%, 57%);
+    color: hsl(270, 65%, 77%);
     background-color: black;
     cursor: pointer;
     text-decoration: none;
@@ -262,7 +266,7 @@ button{ font-family: "SpaceMono-Bold";}
 /*Styler footer*/
 #footer{
     width: 100%;
-    background: hsl(270, 65%, 57%);
+    background: hsl(270, 65%, 77%);
     transition: .4s filter linear;
     margin-top: 10px;
     text-align: center;
@@ -289,7 +293,7 @@ button{ font-family: "SpaceMono-Bold";}
     border-radius: 1px;
     box-sizing: border-box;
     background-color: hsl(146, 25%, 20%);
-    color: hsl(270, 65%, 57%);
+    color: hsl(270, 65%, 77%);
     text-align:center;
     
   }
