@@ -356,6 +356,16 @@ button{ font-family: "SpaceMono-Bold";}
     height: 100%;
 }
 
+.h > img{
+    margin-top: 40%;
+}
+
+.h > bildetekst{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*en usynlig box for å style posisjoner*/
 .boxinvis{
     margin-left: auto;
@@ -401,6 +411,11 @@ bildetekst{
         "v"
         "h";
     }
+
+    .h > img{
+        margin-top: 0;
+    }
+
     .gridbunn{
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 1fr 0.8fr;
