@@ -81,7 +81,8 @@ button{ font-family: "SpaceMono-Bold";}
         text-shadow: 0px 0px 10px hsl(270, 65%, 77%), 0 0 20px hsl(146, 25%, 9%), 0 0 40px hsl(146, 25%, 9%);
     }
     to {
-        text-shadow: 0px 0px 15px hsl(270, 25%, 87%), 0 0 30px hsl(146, 25%, 9%), 0 0 50px hsl(146, 25%, 9%);    }
+        text-shadow: 0px 0px 15px hsl(270, 25%, 87%), 0 0 30px hsl(146, 25%, 9%), 0 0 50px hsl(146, 25%, 9%);
+        }
 }
 
 
@@ -365,7 +366,6 @@ button{ font-family: "SpaceMono-Bold";}
 }
 
 .h > bildetekst{
-    font-size: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -387,9 +387,10 @@ bildetekst{
 }
 
 
-
+/*skalerer til smalerer skjermer*/
 @media only screen and (max-width:1510px){
 
+    /*endrer tekststørrelse*/
     body{
         line-height: 135%;
     }
@@ -409,6 +410,8 @@ bildetekst{
     * > li{
         font-size: 18px;
     }
+
+    /*endrer layout til de forskjellige gridsa*/
     .gridbox{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -432,6 +435,8 @@ bildetekst{
         margin-top: -35px;
     }
     
+
+    /*skjuler headeren og viser meny-knappen*/
     #top{
         display: none;
     }
@@ -440,11 +445,9 @@ bildetekst{
         display: block;
     }
 
-
-
-
 }
 
+/*for de smaleste skjermene*/
 @media only screen and (max-width:800px){
 
     body{
@@ -468,13 +471,8 @@ bildetekst{
         font-size: 16px;
     }
     .gridbunn{
-        grid-template-columns: 1fr;
         grid-template-rows: 0.7fr 1fr 300px;
-        grid-template-areas:
-        "tekst1"
-        "tekst2"
-        "bilde";
-        }
+    }
     .bilde > img{
         width: 67%;
         height: auto;
@@ -486,5 +484,4 @@ bildetekst{
         margin-bottom: 90px;
     }
 
-   
 }
