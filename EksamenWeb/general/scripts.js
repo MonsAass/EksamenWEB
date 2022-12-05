@@ -42,8 +42,6 @@
         
         document.body.style.overflow="visible";
 
-
-
         /*fjerner tab index fra alle linksa i nav_meny
         så de ikke er tilgjengelig når menyen er lukket*/
         var valg = document.querySelectorAll("div#nav_meny div");
