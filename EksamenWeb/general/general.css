@@ -95,7 +95,6 @@ a:active { text-decoration: underline; }
 
 /*styling for header og navigasjonsmeny*/
 
-
 /*lager en header*/
 #top{
     margin: 0px;
@@ -228,7 +227,6 @@ a:active { text-decoration: underline; }
 
 /*styler hovedinnholdet*/
 
-
 /*smoother blur-effekten når menyen åpnes*/
 #main{
     transition: .4s filter linear;
@@ -238,7 +236,6 @@ a:active { text-decoration: underline; }
 .space{
     margin: 20px;
 }
-
 
 /*lager to boxer, den ene med inverte farger fra den første*/
 .box, .boxinv{
@@ -284,7 +281,6 @@ a:active { text-decoration: underline; }
 
 
 /* Styler footer*/
-
 
 #footer {
     padding: 35px;

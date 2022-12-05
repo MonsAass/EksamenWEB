@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--metadata og styles/scripts-->
     <title>Brukervennlighet</title>
     <meta name="forfatter" content="Gruppe 4884">
     <meta name="beskrivelse" content="Brukervennlighet-side">
@@ -14,17 +15,12 @@
 </head>
 <body>
 
-
+<!--navigasjonsmenyen til når siden blir smal nok-->
     <div id="nav_meny">
-
-        <!--gjør dette til en button-->
     
         <div class="lukk">
             <button onclick="closeMenu()" class="meny_valg" tabindex="-1" alt="kryss ut menyen."> X </button>
         </div>
-    
-    
-    
     
         <div>    
             <a href="../../../index.html" class="meny_valg" tabindex="-1">
@@ -72,7 +68,7 @@
     
     
     
-    
+    <!--knapp til å åpne menyen-->
     <!--meny-knapp hentet fra https://www.pngwing.com/en/free-png-khfzl/download?width=70 -->
     <nav id="meny_bar">
         <button onclick="openSlideMenu()" tabindex="8"> 
@@ -80,11 +76,7 @@
         </button>
     </nav>
     
-    
-    
-    
-    
-    
+    <!--header når skjermen er bred-->
     <header id = "top">
         <!-- Logoen til Kongla -->
         <!-- Logoen er henta fra https://www.pngegg.com/en/png-ntyvw -->
@@ -125,7 +117,8 @@
 <div id="main">
 
     <div class="space"></div>
-    
+
+<!--bokser med forskjellig info om tiltak vi har tatt-->
     <div class="boxinv" tabindex="0">
         <h1>Brukervennlighet</h1>
     </div>
@@ -144,7 +137,7 @@
                 </p>
             </div>
             <div class="grid_2">
-                <img src="../../bilder/brukervenlighet/wave1.JPG" alt="bilde av wave hjelpemiddelet.">   
+                <img src="../../bilder/brukervenlighet_bilder/wave1.JPG" alt="bilde av wave hjelpemiddelet.">   
             </div>
         </div>
     </div>
@@ -164,14 +157,14 @@
                         Disse kontrastfeilene valgte vi derfor å ignorere, siden vi mente at de ikke var av kritisk betydning.
                     </p>
                     
-                    <img src="../../bilder/brukervenlighet/wavePilGammel.JPG" alt="bilde av den gamle pilen.">    
-                    <img src="../../bilder/brukervenlighet/wavePilNy.JPG" alt="bilde av den nye pilen.">
+                    <img src="../../bilder/brukervenlighet_bilder/wavePilGammel.JPG" alt="bilde av den gamle pilen.">    
+                    <img src="../../bilder/brukervenlighet_bilder/wavePilNy.JPG" alt="bilde av den nye pilen.">
                     
                     <p style="font-size: 14px;">Før og etter bilde av pilen</p>
 
             </div>
             <div class="grid_2">
-                <img src="../../bilder/brukervenlighet/waveKontrast.JPG" alt="bilde av kontrastverktøy.">
+                <img src="../../bilder/brukervenlighet_bilder/waveKontrast.JPG" alt="bilde av kontrastverktøy.">
             </div>
         </div>
     </div>
@@ -203,7 +196,7 @@
             </p>
 
             <div class="scr_read">
-                <img alt="bilde av google screen reader" src="../../bilder/brukervenlighet/google_screenreader.png">
+                <img alt="bilde av google screen reader" src="../../bilder/brukervenlighet_bilder/google_screenreader.png">
             </div>
         </div>
 
@@ -214,13 +207,21 @@
 
     <div class="boxinv" tabindex="0">
         
-        <h2>I praksis</h2>
-            <p>
-                For å få testet siden ordentlig fikk vi hjelp av frivelige. 
-                De ble spurt om det var noe mangler eller noe forbedringer de hadde ønsket seg. 
-                Som en tilbakemelding fikk vi at fonten var vanskelig å lese, 
-                og med tanke på at fonten burde være dysleksivennlig så valgte vi å finne noe som einet seg bedre.
-            </p>
+        <div>
+            <h2>I praksis</h2>
+                <p>
+                    For å få testet siden ordentlig fikk vi hjelp av frivelige. 
+                    De ble spurt om det var noe mangler eller noe forbedringer de hadde ønsket seg. 
+                    Som en tilbakemelding fikk vi at fonten var vanskelig å lese, 
+                    ettersom den ikke hadde noen små bokstaver, 
+                    og med tanke på at fonten burde være dysleksivennlig så valgte vi å finne noe som einet seg bedre.
+                </p>
+        </div>
+
+        <div style="text-align: center;">
+            <img alt="bilde av den gamle fonten" src="../../bilder/brukervenlighet_bilder/gammel_font_trajan.png" width="65%">
+            <p style="font-size: 15px;">Bilde av den gamle fonten, "Trojan Pro"</p>
+        </div>
     </div>
 
 
