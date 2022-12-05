@@ -310,7 +310,7 @@ button{ font-family: "SpaceMono-Bold";}
     grid-template-rows:350px 450px;
     grid-template-areas:
     "tekst1 bilde"
-    "tekst2 bilde";
+    "tekst2 .";
 }
 
 /*klasse til griden: gridbunn*/
@@ -418,7 +418,7 @@ bildetekst{
 
     .gridbunn{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 1fr 0.8fr;
+    grid-template-rows: 0.7fr 1fr 1fr;
     grid-template-areas:
     "tekst1"
     "tekst2"
@@ -463,13 +463,24 @@ bildetekst{
     * > li{
         font-size: 16px;
     }
+    .gridbunn{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 300px;
+        grid-template-areas:
+        "tekst1"
+        "tekst2"
+        "bilde";
+        }
     .bilde > img{
-        width: 100%;
+        width: 67%;
         height: auto;
     }
+    .bilde{
+        margin-bottom: 5px;
+    }
     .tekst1{
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
 
-
+   
 }
